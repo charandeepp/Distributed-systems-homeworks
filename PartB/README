@@ -1,0 +1,102 @@
+README for PartB: RMI Client-Server model
+--------------------------------------------------------------------------------------
+
+Group Details :
+
+Name 			: Ravali Kandur
+Student ID 		: 5084769
+Email			: kandu009@umn.edu
+
+Name 			: Charandeep Parisineti
+Student ID 		: 5103173
+Email			: paris102@umn.edu
+
+Index
+-------------------------------------------------------------------------------------
+1. Files
+2. Assumptions/Prerequisites
+3. How to Run
+4. Default Hosts List used for testing
+
+1. Files
+-------------------------------------------------------------------------------------
+
+1.1. Client
+-----------------------
+SingleBankClient.java	: class which requests and prints responses in the same order as mentioned in the assignment
+MultiBankClient.java	: class which requests and prints responses in the same order as mentioned in the assignment
+ClientWorkerThread.java	: Worker thread which is used to parallelize as mentioned for ClientB
+ClientLogger.java		: Logger class which gives a formatted logger object used for all client side logging
+ClientUtils.java		: Common utility methods used by both Single Threaded and Multi Threaded clients
+single_client.sh		: Script to run SingleBankClient program
+multi_client.sh			: Script to run MultiBankClient program 
+
+1.2. Server
+-----------------------
+IBankServer.java		: Interface which extends Remote class as needed by RMI
+BankServerImpl.java		: Implementation of the main RMI server
+ServerLogger.java		: Logger class which provides a simple log formatter used by all server related logging
+
+
+1.3 Request/Response
+-----------------------
+IRequest.java			: Interface which defines a prototype for all possible Requests
+IRequestObject.java		: Interface which defines a prototype for all possible Request Objects
+
+AbstractRequest.java	: Abstract Implementations
+AbstractRequestObject.java	: Abstract Implementations
+
+NewAccountRequest.java		: New Account Request Implementation
+BalanceRequest.java			: Balance Request Implementation
+DepositRequest.java			: Deposit Request Implementation
+WithdrawRequest.java		: Withdraw Request Implementation
+TransferRequest.java		: Transfer Request Implementation
+
+NewAccountRequestObject.java	: New Account Request Object Implementation
+BalanceRequestObject.java		: Balance Request Object Implementation
+DepositRequestObject.java		: Deposit Request Object Implementation
+TransferRequestObject.java		: Transfer Request Object Implementation
+WithdrawRequestObject.java		: Withdraw Request Object Implementation
+
+RequestType.java				: Enum for possible Request Types
+RequestResponse.java			: Class which denotes the structure of Response Message
+ResponseObject.java				: Class which denotes the structure of Response Object Message
+
+1.4 Common
+-----------------------
+Account.java					: Class which holds the behavior of an Account
+AccountPair.java				: Utility class to denote a pair of Accounts
+Arguments.java					: Utility class to denote a set of Arguments passed
+
+1.5. Others
+------------------------
+- README					: brief note on what are the components of project and how to run different modules.
+
+2. Assumptions
+--------------------------------------------------------------------------------------
+- Assuming that the programs supplied will be run as per the sample scripts provided
+
+3. How to Run
+-----------------------------------------------------------------------
+1. Run BankServer 				: Run the server.sh or follow the same steps mentioned there
+								  /bin/sh server.sh
+2. Run Single Threaded Client	: Run the single_client.sh or follow the same steps mentioned there
+								  /bin/sh single_client.sh 
+3. Run Multi Threaded Client	: Run the single_client.sh or follow the same steps mentioned there
+								  /bin/sh multi_client.sh
+		
+4. Default Hosts used for Testing
+---------------------------------------------------------------------------------------------
+Single Threaded Client: 
+			kh1262-08.cselabs.umn.edu
+			kh1262-09.cselabs.umn.edu
+		
+Multi Threaded Client: 
+			kh1262-10.cselabs.umn.edu
+			kh1262-11.cselabs.umn.edu
+	
+RMI Server: 
+			kh1262-08.cselabs.umn.edu
+			kh1262-09.cselabs.umn.edu
+
+---------------------------------------------------------------------------------------------

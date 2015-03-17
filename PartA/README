@@ -1,0 +1,66 @@
+README for PartA:
+--------------------------------------------------------------------------------------
+
+Group Details :
+
+Name 			: Ravali Kandur
+Student ID 		: 5084769
+Email			: kandu009@umn.edu
+
+Name 			: Charandeep Parisineti
+Student ID 		: 5103173
+Email			: paris102@umn.edu
+
+Index
+-------------------------------------------------------------------------------------
+1. Files
+2. How to Run
+
+1. Files
+-------------------------------------------------------------------------------------
+
+1.1. Client
+-----------------------
+ClientA.java	: class which requests and prints responses in the same order as mentioned in the assignment. This is the first client.
+ClientB.java    : class which requests and prints responses in the same order as mentioned in the assignment. This is the second client.
+
+
+
+1.2. Server
+-----------------------
+Server.java    : class which has the multithread server implementation along with the bank server functions
+
+1.3 Request/Response
+-----------------------
+
+Request.java : Base class for all the requests. Implements Serializable
+Response.java : Base class for all the responses. Implements Serializable.
+
+
+NewAccountRequest.java		: New Account Request Implementation. Extends Request
+BalanceRequest.java			: Balance Request Implementation. Extends Request
+DepositRequest.java			: Deposit Request Implementation. Extends Request
+WithdrawRequest.java		: Withdraw Request Implementation. Extends Request
+TransferRequest.java		: Transfer Request Implementation. Extends Request
+
+NewAccountResponse.java	: New Account Request Object Implementation. Extends Response
+BalanceResponse.java		: Balance Request Object Implementation. Extends Response
+DepositResponse.java		: Deposit Request Object Implementation. Extends Response
+TransferResponse.java		: Transfer Request Object Implementation. Extends Response
+WithdrawResponse.java		: Withdraw Request Object Implementation. Extends Response
+
+AccountInfo.java     : Account information.
+
+1.4. Others
+------------------------
+- README					: brief note on what are the components of project and how to run different modules.
+
+2. How to Run
+-----------------------------------------------------------------------
+Compile the folder using "javac *.java"
+
+
+1. Run BankServer 	        : Using “java Server <port-number>”								 
+2. Run Single Threaded Client	: Using “java ClientA <host-name> <port-number>”
+3. Run Multi Threaded Client	: Using “java ClientB <host-name> <port-number> <numberOfThreads> <numberOfIterations>”
+---------------------------------------------------------------------------------------------
