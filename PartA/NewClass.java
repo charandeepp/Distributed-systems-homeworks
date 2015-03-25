@@ -4,4 +4,5 @@
 public class NewClass {
 
     int i;
+    int j;
 }
