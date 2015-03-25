@@ -98,7 +98,7 @@ public class BankServerImpl extends UnicastRemoteObject implements IBankServer {
 	// Handles Balance Transfer Request
 	private ResponseObject handleTransferRequest(IRequestObject reqObject) {
 		TransferRequestObject tro = (TransferRequestObject) reqObject;
-		TransferRequest treq = new TransferRequest(getFromStore(tro.sourceID()), getFromStore(tro.destinationID()), tro.amount());
+		TransferRequestB treq = new TransferRequestB(getFromStore(tro.sourceID()), getFromStore(tro.destinationID()), tro.amount());
 		RequestResponse response = null;
 		synchronized (this) {
 			response = treq.execute();
@@ -115,7 +115,7 @@ public class BankServerImpl extends UnicastRemoteObject implements IBankServer {
 	// Handles Money Withdraw Request
 	private ResponseObject handleWithdrawRequest(IRequestObject reqObject) {
 		WithdrawRequestObject wro = (WithdrawRequestObject) reqObject;
-		WithdrawRequest wreq = new WithdrawRequest(getFromStore(wro.accountID()), wro.amount());
+		WithdrawRequestB wreq = new WithdrawRequestB(getFromStore(wro.accountID()), wro.amount());
 		RequestResponse response = wreq.execute();
 		if(response.getStatus()) {
 			updateStore((Account)response.getResult());
@@ -127,7 +127,7 @@ public class BankServerImpl extends UnicastRemoteObject implements IBankServer {
 	// Handles money Deposit Request
 	private ResponseObject handleDepositRequest(IRequestObject reqObject) {
 		DepositRequestObject dro = (DepositRequestObject) reqObject;
-		DepositRequest dreq = new DepositRequest(getFromStore(dro.accountID()), dro.amount());
+		DepositRequestB dreq = new DepositRequestB(getFromStore(dro.accountID()), dro.amount());
 		RequestResponse response = dreq.execute();
 		if(response.getStatus()) {
 			updateStore((Account)response.getResult());
@@ -139,7 +139,7 @@ public class BankServerImpl extends UnicastRemoteObject implements IBankServer {
 	// Handles new Account Creation Request
 	private ResponseObject handleNewAccountRequest(IRequestObject reqObject) {
 		NewAccountRequestObject aro = (NewAccountRequestObject) reqObject;
-		NewAccountRequest areq = new NewAccountRequest(aro.firstName(), aro.lastName(), aro.address());
+		NewAccountRequestB areq = new NewAccountRequestB(aro.firstName(), aro.lastName(), aro.address());
 		RequestResponse response = areq.execute();
 		if(response.getStatus()) {
 			updateStore((Account)response.getResult());
