@@ -1,6 +1,6 @@
 package assignment5;
 /**
- * Interface which denotes a request sent by the client to an RMI server
+ * Interface which denotes a request sent by the client to the Bankserver
  * 
  * @author rkandur
  *

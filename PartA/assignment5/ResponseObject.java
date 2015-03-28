@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 /**
  * Class which represents the typical Response Object sent by the server to
- * client in response to an RMI request
+ * client in response to a request
  * 
  * @author rkandur
  *

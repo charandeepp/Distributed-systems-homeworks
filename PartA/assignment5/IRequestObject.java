@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 /**
  * Interface which represents the typical RequestObject sent by the client while
- * making an RMI call
+ * making a request to the Server 
  * 
  * @author rkandur
  *

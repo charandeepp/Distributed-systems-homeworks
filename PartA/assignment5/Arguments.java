@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 /**
  * class which denotes the typical structure for the arguments passed between an
- * RMI Server and Client
+ * Server and Client
  * 
  * @author rkandur
  *
