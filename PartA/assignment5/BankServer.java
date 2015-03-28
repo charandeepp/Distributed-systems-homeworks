@@ -349,6 +349,7 @@ public class BankServer {
 		BankServer bankServer = new BankServer(Integer.parseInt(args[0]));
 		new ClientRequestHandlingThread(clientReqPort_, bankServer);
 		new ServerRequestHandlingThread(serverReqPort_, bankServer);
+		new ServerJobExecuterThread(bankServer);
 		
 	}
 
