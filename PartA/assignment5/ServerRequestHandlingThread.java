@@ -11,20 +11,23 @@ import java.net.Socket;
 /**
  * This will be responsible for the server peer communication/activity
  * 
+ * This thread handles all the requests that are shared by the other peer
+ * servers whenever some client contacts them.
+ * 
  * @author rkandur
  *
  */
 public class ServerRequestHandlingThread extends Thread {
 
-	private ServerSocket peerSocket_;
-	private BankServer bankServer_;
-	private int port_;
+	private ServerSocket socket_;	// socket for handling server communication
+	private BankServer bankServer_;		// bankServerImplementation
+	private int port_;					// port on which this thread creates a socket and listens for requests from other servers
 	
 	public ServerRequestHandlingThread(int port, BankServer server) {
 		port_ = port;
 		bankServer_ = server;
 		try {
-			peerSocket_ = new ServerSocket(port_);
+			socket_ = new ServerSocket(port_);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -32,23 +35,34 @@ public class ServerRequestHandlingThread extends Thread {
 	
 	@Override
 	public void run() {
+
 		// TODO: intentionally doing this sequentially, must check if this needs to be made multi-threaded?
 		//TODO: can we save the connections rather than making a new connection per communication?
-        while(true){
+        
+		while(true){
             try {
-				Socket socket = peerSocket_.accept();
+            	
+            	// infinitely accepts new requests for the other servers
+				Socket socket = socket_.accept();
                 ServerRequest req = (ServerRequest) new ObjectInputStream(socket.getInputStream()).readObject();
                 ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
-				bankServer_.addServerRequest(req);
-				// NOTE: we are using processID+clockValue+"success" to indicate an ACK message
+				
+                //add the request received to the current local queue which will be executed as per the rules
+                // framed by StateMachineModel
+                bankServer_.addServerRequest(req);
+
+                // NOTE: we are using processID+clockValue+"success" to indicate an ACK message
 				outs.writeObject("ack_" + req.getSourceProcessId() + req.getClockValue());
 				socket.close();
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
+            
         }
+		
 	}
 	
 }

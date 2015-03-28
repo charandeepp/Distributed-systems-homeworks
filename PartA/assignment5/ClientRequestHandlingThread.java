@@ -6,22 +6,22 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * This will be responsible for handling client requests
+ * This will be responsible for accepting client requests and passing on to the BankServer
  * 
  * @author rkandur
  *
  */
 public class ClientRequestHandlingThread extends Thread {
 
-	private int port_;
-	private ServerSocket serverSocket_;
-	private BankServer bankServer_;
+	private int port_;						//port on which this part of the server should run
+	private ServerSocket socket_;			//socket for communicating with clients 
+	private BankServer bankServer_;			//BankServer implementation
 	
 	public ClientRequestHandlingThread(int port, BankServer bankServer) {
 		port_ = port;
 		bankServer_ = bankServer;
 		try {
-			serverSocket_ = new ServerSocket(port_);
+			socket_ = new ServerSocket(port_);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -31,8 +31,10 @@ public class ClientRequestHandlingThread extends Thread {
 	public void run() {
 		try {
 			while(true) {
-				Socket clientSocket = serverSocket_.accept();
+				// accept requests from clients for the entire lifetime
+				Socket clientSocket = socket_.accept();
 				IRequestObject reqObj = (IRequestObject) new ObjectInputStream(clientSocket.getInputStream()).readObject();
+				//add this request to the local queue to execute them as per StateMachineModel rules.
 		        bankServer_.addNewRequest(reqObj, clientSocket, bankServer_);
 			}
 		} catch (IOException e) {

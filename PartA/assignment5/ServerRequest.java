@@ -1,5 +1,16 @@
 package assignment5;
 
+/**
+ * Class which is used to denote the internal structure which represents each
+ * client request
+ * 
+ * It has the original client request -> {@link IRequest}, 
+ * the clock value associated with the request, 
+ * source process ID which has received the message from client.
+ * 
+ * @author rkandur
+ *
+ */
 public class ServerRequest {
 
 	private int sourceProcessId_;

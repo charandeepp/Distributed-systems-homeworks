@@ -13,12 +13,19 @@ import java.util.PriorityQueue;
 import java.util.logging.Logger;
 
 /** CSci5105 Spring 2015
- * Assignment# 2
+ * Assignment# 5
  * name: <Ravali Kandur>, <Charandeep Parisineti>
  * student id: <5084769>, <5103173>
  * x500 id: <id1>, <id2 (optional)>
+ * TODO: need to change these machines later
  * CSELABS machine: <kh1262-08.cselabs.umn.edu, kh1262-09.cselabs.umn.edu, 
  * 					kh1262-10.cselabs.umn.edu, kh1262-11.cselabs.umn.edu>
+ */
+
+/**
+ * TODO:
+ * Need to implement logic for handling HALT messages and kill everyone gracefully 
+ * as mentioned in the HW description
  */
 
 /**
@@ -34,13 +41,20 @@ public class BankServer {
 	// store which maintains all the accounts for this bank
 	private static Hashtable<Integer, Account> accountsStore_ =  new Hashtable<Integer, Account>();
  
-	//TODO: should add logic to appropriately increment clock based on events happening
+	// TODO: should check lamport clock behavior i.e. incrementing for all the events [especially internal events]
 	public LamportClock clock_ = new LamportClock();
+	
+	// map of peer server host and port on which this server can communicate
 	private HashMap<String, Integer> peerServers_ = new HashMap<String, Integer>();
+	
+	// map to hold the requests which are made by client directly to this server
+	// and hold a socket object on which response needs to be sent back
 	private HashMap<ServerRequest, Socket> directRequestVsConnection_ = new HashMap<ServerRequest, Socket>();
+	
+	// map to hold the direct requests vs the Acknowledgements made by the other servers
 	private HashMap<ServerRequest, HashSet<String>> reqVsAcks_ = new HashMap<ServerRequest, HashSet<String>>();
 
-	//TODO:logging is yet to be added
+	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
 
 	private static int processId_;
@@ -48,11 +62,14 @@ public class BankServer {
 	private static int clientReqPort_;
 	
 	// lock variable to maintain the local queue in state machine model
+	// TODO: need to work on synchronization part. use this when handling sync logic
 	private Integer reqLock_;
 	
+	// queue which holds all the yet to be executed requests
 	private PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(new Comparator<ServerRequest>() {
 		@Override
 		public int compare(ServerRequest r1, ServerRequest r2) {
+			// prioritize based on lamport clock values as per total ordering rules in StateMachineModel
 			if(r1.getClockValue() == r2.getClockValue()) {
 				return r1.getSourceProcessId() - r2.getSourceProcessId() > 0 ? 1 : -1;
 			}
@@ -70,9 +87,10 @@ public class BankServer {
 	synchronized void execute() {
 		if(!requests_.isEmpty()) {
 			if(okToProceed(requests_.peek())) {
-				//TODO: use reqVsAcks_ and make sure you have received all the acknowledgements before we execute this.
 				ServerRequest r = requests_.poll();
 				ResponseObject resp = serveRequest(r.getRequest());
+				logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
+				// if it is a direct request, we also need to send a response back to the client
 				if(directRequestVsConnection_.containsKey(r)) {
 					try {
 						Socket cs = directRequestVsConnection_.remove(r);
@@ -98,6 +116,9 @@ public class BankServer {
 		return false;
 	}
 
+	/**
+	 * Helper method to pick up initial config information from cfg file
+	 */
 	private void loadFromConfig() {
 
 		try {
@@ -138,7 +159,10 @@ public class BankServer {
 		}
 	}
 
-	public ResponseObject serveRequest(IRequest req) {
+	/**
+	 * method which is used to execute a request which is on the head of the queue
+	 */
+	private ResponseObject serveRequest(IRequest req) {
 		//TODO: worst way of doing this. try if you can change it later??
 		ResponseObject response = new ResponseObject(Boolean.FALSE, "INVALID REQUEST");
 		if(req instanceof NewAccountRequestB) {
@@ -155,14 +179,14 @@ public class BankServer {
 		return response;
 	}
 	
-	// Handles new Balance Inquiry Request
+	// serves new Balance Inquiry Request
 	private ResponseObject serveBalanceRequest(IRequest breq) {
 		RequestResponse response = (RequestResponse) breq.execute();
 		logger_.info(RequestType.balance.name() + " -> " + response.getResponse());
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
 
-	// Handles Balance Transfer Request
+	// serves Balance Transfer Request
 	private ResponseObject serveTransferRequest(IRequest treq) {
 		RequestResponse response = (RequestResponse) treq.execute();
 		if(response.getStatus()) {
@@ -174,7 +198,7 @@ public class BankServer {
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
 
-	// Handles Money Withdraw Request
+	// serves Money Withdraw Request
 	private ResponseObject serveWithdrawRequest(IRequest wreq) {
 		RequestResponse response = (RequestResponse) wreq.execute();
 		if(response.getStatus()) {
@@ -184,7 +208,7 @@ public class BankServer {
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
 
-	// Handles money Deposit Request
+	// serves money Deposit Request
 	private ResponseObject serveDepositRequest(IRequest dreq) {
 		RequestResponse response = (RequestResponse) dreq.execute();
 		if(response.getStatus()) {
@@ -194,17 +218,20 @@ public class BankServer {
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
 
-	// Handles new Account Creation Request
+	// serves new Account Creation Request
 	private ResponseObject serveNewAccountRequest(IRequest areq) {
 		RequestResponse response = (RequestResponse) areq.execute();
 		if(response.getStatus()) {
 			updateStore((Account)response.getResult());
 		}
-		//TODO: we need to modify logging as per new requirements. we should change the log formatter too !!!!
+		//TODO: should we need this logging? we should change the log formatter too !!!!
 		logger_.info(RequestType.newaccount.name() + " -> " + response.getResponse());
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
 	
+	/**
+	 * Adds a new client request to the server 
+	 */
 	public void addNewRequest(IRequestObject reqObject, Socket clientSocket, BankServer bankServer) {
 		RequestType type = (RequestType)reqObject.reqType();
 		ServerRequest sreq = null;
@@ -248,6 +275,10 @@ public class BankServer {
 		BalanceRequestObject bro = (BalanceRequestObject) reqObject;
 		BalanceRequestB breq = new BalanceRequestB(getFromStore(bro.accountID()));
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), breq);
+		logger_.info(processId_ + " " + "CLNT-REQ" + " "
+				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
+				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ " <" + bro.accountID() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
@@ -259,6 +290,11 @@ public class BankServer {
 				getFromStore(tro.sourceID()),
 				getFromStore(tro.destinationID()), tro.amount());
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), treq);
+		logger_.info(processId_ + " " + "CLNT-REQ" + " "
+				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
+				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ " <" + tro.sourceID() + ", " + tro.destinationID() + ", "
+				+ tro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
@@ -268,6 +304,10 @@ public class BankServer {
 		WithdrawRequestObject wro = (WithdrawRequestObject) reqObject;
 		WithdrawRequestB wreq = new WithdrawRequestB(getFromStore(wro.accountID()), wro.amount());
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), wreq);
+		logger_.info(processId_ + " " + "CLNT-REQ" + " "
+				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
+				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ " <" + wro.accountID() + ", " + wro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
@@ -277,6 +317,10 @@ public class BankServer {
 		DepositRequestObject dro = (DepositRequestObject) reqObject;
 		DepositRequestB dreq = new DepositRequestB(getFromStore(dro.accountID()), dro.amount());
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), dreq);
+		logger_.info(processId_ + " " + "CLNT-REQ" + " "
+				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
+				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ " <" + dro.accountID() + ", " + dro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
