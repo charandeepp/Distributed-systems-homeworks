@@ -12,8 +12,10 @@ import java.util.logging.SimpleFormatter;
  */
 public class ServerLogger {
 
-	private static Logger logger_ = null;
 	private static String FILE_NAME = "serverLogfile";
+	
+	private static Logger logger_ = null;
+	private static FileHandler fh_;
 	
 	private ServerLogger() {
 		
@@ -27,12 +29,11 @@ public class ServerLogger {
 		if(logger_ == null) {
 			
 			logger_ = Logger.getLogger(ServerLogger.class.getSimpleName());
-			FileHandler fh;
 		    try {
-		        fh = new FileHandler(FILE_NAME);
-		        logger_.addHandler(fh);
+		        fh_ = new FileHandler(FILE_NAME);
+		        logger_.addHandler(fh_);
 		        SimpleFormatter formatter = new SimpleFormatter();
-		        fh.setFormatter(formatter);
+		        fh_.setFormatter(formatter);
 		    } catch (SecurityException e) {
 		        e.printStackTrace();
 		    } catch (IOException e) {
@@ -42,6 +43,10 @@ public class ServerLogger {
 		}
 		
 		return logger_;
+	}
+	
+	public static void closeLogFile() {
+		fh_.close();
 	}
 	
 }

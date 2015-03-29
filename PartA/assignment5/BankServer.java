@@ -24,8 +24,14 @@ import java.util.logging.Logger;
 
 /**
  * TODO:
- * Need to implement logic for handling HALT messages and kill everyone gracefully 
- * as mentioned in the HW description
+ * Need to check if implementation logic for handling HALT messages and killing
+ * everyone gracefully is done correctly
+ * 
+ * Barely added synchronization logic.
+ * Need to add locking mechanism etc for multi-threaded environment
+ * 
+ * Need to check the logging part
+ * 
  */
 
 /**
@@ -85,22 +91,32 @@ public class BankServer {
 	// TODO: should call this when we know that there are no other messages from
 	// the other servers
 	synchronized void execute() {
-		if(!requests_.isEmpty()) {
-			if(okToProceed(requests_.peek())) {
-				ServerRequest r = requests_.poll();
-				ResponseObject resp = serveRequest(r.getRequest());
-				logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
-				// if it is a direct request, we also need to send a response back to the client
-				if(directRequestVsConnection_.containsKey(r)) {
-					try {
-						Socket cs = directRequestVsConnection_.remove(r);
-						new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
-						cs.close();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				}
+		
+		if(requests_.isEmpty()) {
+			return;
+		}
+		if(!okToProceed(requests_.peek())) {
+			return;
+		}
+		ServerRequest r = requests_.poll();
+		ResponseObject resp = serveRequest(r.getRequest());
+		logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
+		// if it is a direct request, we also need to send a response back to the client
+		if(directRequestVsConnection_.containsKey(r)) {
+			try {
+				Socket cs = directRequestVsConnection_.remove(r);
+				new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
+				cs.close();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
+		}
+		
+		if(r.getRequest() instanceof HaltRequestB) {
+			// we should exit when we encounter a HALT request
+			// TODO: I am not sure if this is the right way to do it. check if
+			// we can do it in a better way
+			System.exit(0);
 		}
 	}
 	
@@ -175,10 +191,43 @@ public class BankServer {
 			response = serveTransferRequest(req);
 		} else if(req instanceof BalanceRequestB) {
 			response = serveBalanceRequest(req);
+		} else if(req instanceof HaltRequestB) {
+			response = serveHaltRequest(req);
 		}
 		return response;
 	}
 	
+	private ResponseObject serveHaltRequest(IRequest req) {
+		
+		RequestResponse response = (RequestResponse) req.execute();
+		// TODO Auto-generated method stub
+		logger_.info(RequestType.halt.name() + " -> " + response.getResponse());
+
+		//print all account balances
+		logger_.info("Account Balances ... ");
+		for(Integer a : accountsStore_.keySet()) {
+			logger_.info("Account { " + a + " } has balance = { " + accountsStore_.get(a).getBalance() + " }");
+		}
+		
+		// print all pending requests
+		logger_.info("Pending Requests ... ");
+		while(!requests_.isEmpty()) {
+			ServerRequest r = requests_.poll();
+			System.out.println(r.getSourceProcessId()+"_"+r.getClockValue());
+		}
+		
+		// print performance data
+		logger_.info("Performance Measurement Data ... ");
+		Long timeTaken = System.currentTimeMillis() - ((HaltRequestB)req).getStartTime();
+		logger_.info("Time taken to process the request when number of servers = { "
+				+ peerServers_.size() + " } is " + timeTaken.toString());
+		
+		// closing log files
+		ServerLogger.closeLogFile();
+		
+		return new ResponseObject(response.getStatus(), response.getResponse());
+	}
+
 	// serves new Balance Inquiry Request
 	private ResponseObject serveBalanceRequest(IRequest breq) {
 		RequestResponse response = (RequestResponse) breq.execute();
@@ -256,6 +305,10 @@ public class BankServer {
 				sreq = addBalanceRequest(reqObject, clientSocket);
 				break;
 			}
+			case halt: {
+				sreq = addHaltRequest(reqObject, clientSocket);
+				break;
+			}
 			default: {
 				break;
 			}
@@ -270,6 +323,18 @@ public class BankServer {
 		}
 	}
 	
+	private ServerRequest addHaltRequest(IRequestObject reqObject, Socket clientSocket) {
+		HaltRequestObject hro = (HaltRequestObject) reqObject;
+		HaltRequestB hreq = new HaltRequestB();
+		ServerRequest sreq = new ServerRequest(processId_, clock_.getClockValue(), hreq);
+		logger_.info(processId_ + " " + "CLNT-REQ" + " "
+				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.halt.name()
+				+ " <" + "NONE" + ">");
+		addClientRequest(sreq, clientSocket);
+		return null;
+	}
+
 	// Adds new Balance Inquiry Request to Queue
 	private ServerRequest addBalanceRequest(IRequestObject reqObject, Socket clientSocket) {
 		BalanceRequestObject bro = (BalanceRequestObject) reqObject;
@@ -277,7 +342,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), breq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + bro.accountID() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -292,7 +357,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), treq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + tro.sourceID() + ", " + tro.destinationID() + ", "
 				+ tro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
@@ -306,7 +371,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), wreq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + wro.accountID() + ", " + wro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -319,7 +384,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), dreq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + dro.accountID() + ", " + dro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -332,7 +397,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), areq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + processId_ + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + aro.firstName() + ", " + aro.lastName() + ", "
 				+ aro.address() + ">");
 		addClientRequest(sreq, clientSocket);
@@ -351,6 +416,7 @@ public class BankServer {
 		new ServerRequestHandlingThread(serverReqPort_, bankServer);
 		new ServerJobExecuterThread(bankServer);
 		
+		//TODO: should wait here until we receive a halt message. should i use a join?
 	}
 
 	public void addServerRequest(ServerRequest req) {

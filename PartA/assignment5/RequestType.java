@@ -14,7 +14,8 @@ public enum RequestType {
 	deposit, 
 	withdraw, 
 	transfer, 
-	balance, 
+	balance,
+	halt,
 	invalid;
 
 	public RequestType getRequestTypeFor(String req) {
