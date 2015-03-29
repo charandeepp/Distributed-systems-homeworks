@@ -1,0 +1,109 @@
+package assignment5;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.logging.Logger;
+
+import javafx.util.Pair;
+
+/**
+ * client to the {@link BankServer} which performs some transactions as
+ * mentioned below on some of the accounts
+ * 
+ * 
+ * This is a multi-threaded client where number of threads will be equal to the
+ * number of server processes. Each client thread will be dedicated to
+ * communicate with exactly one of the server processes.
+ * 
+ * @author rkandur
+ *
+ */
+public class BankClient {
+	
+	private static String CONFIG_FILE_PATH = "client.cfg";
+	private static Logger logger_ = ClientLogger.logger();
+
+	// hostname vs <processID, port>
+	private static HashMap<Integer, Pair<String, Integer>> serverIdVsHostPort_ = new HashMap<Integer, Pair<String, Integer>>();
+	
+	/**
+	 * Helper method to pick up initial config information from cfg file
+	 */
+	private static void loadFromConfig() {
+		try {
+			File file = new File(CONFIG_FILE_PATH);
+			FileReader fileReader = new FileReader(file);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			String line;
+			while ((line = bufferedReader.readLine()) != null) {
+				if (!line.startsWith("#")) {
+					String[] toks = line.split(" ");
+					if (toks.length != 3) {
+						continue;
+					}
+					serverIdVsHostPort_.put(Integer.parseInt(toks[1].trim()), new Pair<String, Integer>(
+							toks[0].trim(), Integer.parseInt(toks[2].trim())));
+				}
+			}
+			bufferedReader.close();
+			fileReader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		CONFIG_FILE_PATH = args[0].trim();
+		loadFromConfig();
+		
+		HashSet<BankClientThread> thGroup = new HashSet<BankClientThread>();
+		
+		// create client threads which are equal to the number of server processes
+		for(Integer pid : serverIdVsHostPort_.keySet()) {
+			Pair<String, Integer> hp = serverIdVsHostPort_.get(pid);
+			BankClientThread t = new BankClientThread(pid, hp.getKey(), hp.getValue(), logger_);
+			thGroup.add(t);
+		}
+		
+		// join on all threads
+		for(BankClientThread t : thGroup) {
+			try {
+				t.wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//send HALT messsage to server with processID = 0
+		try {
+			
+			Socket socket = new Socket(serverIdVsHostPort_.get(0).getKey(), serverIdVsHostPort_.get(0).getValue());
+			ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
+			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
+			
+			HaltRequestObject reqObject = new HaltRequestObject();
+			logger_.info("0" + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.halt.name());
+			outs.writeObject(reqObject);
+			
+			ResponseObject reqResponse = (ResponseObject) ins.readObject();
+			logger_.info("0" + " " + " RSP " + System.currentTimeMillis() + " " + reqResponse.getResponse());
+			
+			socket.close();
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+}
