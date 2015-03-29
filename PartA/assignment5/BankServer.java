@@ -30,6 +30,9 @@ import java.util.logging.Logger;
  * Barely added synchronization logic.
  * Need to add locking mechanism etc for multi-threaded environment
  * 
+ * we need to calculate the avergar performance time for all requests.
+ * Should add this logic, for now just printing the values for just HALT request
+ * 
  * Need to check the logging part
  * 
  */
