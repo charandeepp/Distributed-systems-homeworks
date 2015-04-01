@@ -104,34 +104,33 @@ public class ServerBroadcasterThread extends Thread {
         }
     }
 
-        private class HelperThread extends Thread {
-            private Socket peerSocket;
-            private ServerRequest sendingReq;
+    private class HelperThread extends Thread {
+        private Socket peerSocket;
+        private ServerRequest sendingReq;
 
-            HelperThread(Socket socket, ServerRequest sendingReq) {
-                this.peerSocket = socket;
-                this.sendingReq = sendingReq;
-            }
+        HelperThread(Socket socket, ServerRequest sendingReq) {
+            this.peerSocket = socket;
+            this.sendingReq = sendingReq;
+        }
 
-            @Override
-            public void run() {
-                try {
-                    new ObjectOutputStream(this.peerSocket.getOutputStream()).writeObject(sendingReq);
-                    // ack message from each peer servers
-                    synchronized (acksLock_) {
-                        acks.add(new ObjectInputStream(this.peerSocket.getInputStream()).readObject().toString());
-                    }
-                    this.peerSocket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
+        @Override
+        public void run() {
+            try {
+                new ObjectOutputStream(this.peerSocket.getOutputStream()).writeObject(sendingReq);
+                // ack message from each peer servers
+                synchronized (acksLock_) {
+                    acks.add(new ObjectInputStream(this.peerSocket.getInputStream()).readObject().toString());
                 }
-
+                this.peerSocket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
             }
-
 
         }
 
+
     }
+
 }
