@@ -45,7 +45,7 @@ import java.util.logging.Logger;
  */
 public class BankServer {
 	
-	private static String CONFIG_FILE_PATH = "serverconfig.txt";
+	private static String CONFIG_FILE_PATH = "server.cfg";
 
 	// store which maintains all the accounts for this bank
 	private static Hashtable<Integer, Account> accountsStore_ =  new Hashtable<Integer, Account>();
@@ -54,41 +54,46 @@ public class BankServer {
 	public LamportClock clock_ = new LamportClock();
 	
 	// map of peer server host and port on which this server can communicate
-	private HashMap<String, Integer> peerServers_ = new HashMap<String, Integer>();
+	public HashMap<String, Integer> peerServers_ = new HashMap<String, Integer>();
 	
 	// map to hold the requests which are made by client directly to this server
 	// and hold a socket object on which response needs to be sent back
-	private HashMap<ServerRequest, Socket> directRequestVsConnection_ = new HashMap<ServerRequest, Socket>();
+	public HashMap<ServerRequest, Socket> directRequestVsConnection_ = new HashMap<ServerRequest, Socket>();
 	
 	// map to hold the direct requests vs the Acknowledgements made by the other servers
-	private HashMap<ServerRequest, HashSet<String>> reqVsAcks_ = new HashMap<ServerRequest, HashSet<String>>();
+	public HashMap<ServerRequest, HashSet<String>> reqVsAcks_ = new HashMap<ServerRequest, HashSet<String>>();
+
+    public HashMap<TimeStamp,HashSet<Integer>> ackSet = new HashMap<TimeStamp,HashSet<Integer>>();
 
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
 
-	private static int processId_;
-	private static int serverReqPort_;
-	private static int clientReqPort_;
+    public static String hostName_;
+	public static int processId_;
+	public static int serverReqPort_;
+	public static int clientReqPort_;
 	
 	// lock variable to maintain the local queue in state machine model
 	// TODO: need to work on synchronization part. use this when handling sync logic
-	private Integer reqLock_;
-	
+	public Integer reqLock_;
+
+    public Integer clientDSLock_;
+
 	// queue which holds all the yet to be executed requests
-	private PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(new Comparator<ServerRequest>() {
+	public PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(new Comparator<ServerRequest>() {
 		@Override
 		public int compare(ServerRequest r1, ServerRequest r2) {
 			// prioritize based on lamport clock values as per total ordering rules in StateMachineModel
-			if(r1.getClockValue() == r2.getClockValue()) {
+			if(r1.getOriginClockValue() == r2.getOriginClockValue()) {
 				return r1.getSourceProcessId() - r2.getSourceProcessId() > 0 ? 1 : -1;
 			}
-			return (int) (r1.getClockValue() - r2.getClockValue()) > 0 ? 1 : -1;
+			return (int) (r1.getOriginClockValue() - r2.getOriginClockValue()) > 0 ? 1 : -1;
 		}
 	});
 	
 	public BankServer(int procId) {
-		loadFromConfig();
-		processId_ = procId;
+        processId_ = procId;
+        loadFromConfig();
 	}
 	
 	// TODO: should call this when we know that there are no other messages from
@@ -127,10 +132,8 @@ public class BankServer {
 	// TODO: this will anyways happen. But what if we miss some acknowledgement?
 	// shouldn't we check other server Requests that have a higher timestamp?
 	private boolean okToProceed(ServerRequest req) {
-		if(reqVsAcks_.containsKey(req)) {
-			if(reqVsAcks_.get(req).size() == peerServers_.size()) {
-				return true;
-			}
+		if(ackSet.get(req.getTimeStamp()).size() == 3) {
+			return true;
 		}
 		return false;
 	}
@@ -154,6 +157,7 @@ public class BankServer {
 					if(Integer.parseInt(toks[1].trim()) == processId_) {
 						clientReqPort_ = Integer.parseInt(toks[2]);
 						serverReqPort_ = Integer.parseInt(toks[3]);
+                        hostName_ = toks[0].trim();
 					} else {
 						peerServers_.put(toks[0].trim(), Integer.parseInt(toks[3].trim()));
 					}
@@ -334,7 +338,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.halt.name()
 				+ " <" + "NONE" + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return null;
 	}
 
@@ -347,7 +351,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + bro.accountID() + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -363,7 +367,7 @@ public class BankServer {
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + tro.sourceID() + ", " + tro.destinationID() + ", "
 				+ tro.amount() + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -376,7 +380,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + wro.accountID() + ", " + wro.amount() + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -389,7 +393,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + dro.accountID() + ", " + dro.amount() + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -403,14 +407,14 @@ public class BankServer {
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + aro.firstName() + ", " + aro.lastName() + ", "
 				+ aro.address() + ">");
-		addClientRequest(sreq, clientSocket);
+		//addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 	
 	public static void main(String[] args) {
 
 		if(args.length!=1){
-            throw new RuntimeException("Enter the port number!");
+            throw new RuntimeException("Enter the process id!");
         }
 
 		//TODO: assuming id will be the 0th argument
@@ -429,12 +433,12 @@ public class BankServer {
 		}
 	}
 
-	public void addClientRequest(ServerRequest sreq, Socket clientSocket) {
+	/*public void addClientRequest(ServerRequest sreq, Socket clientSocket) {
 		synchronized(reqLock_) {
 			requests_.add(sreq);
 			directRequestVsConnection_.put(sreq, clientSocket);
 		}
-	}
+	}*/
 
 	public void updateAcksToServer(ServerRequest request, HashSet<String> acks) {
 		reqVsAcks_.put(request, acks);

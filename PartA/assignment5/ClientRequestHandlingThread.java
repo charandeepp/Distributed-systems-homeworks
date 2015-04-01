@@ -30,9 +30,9 @@ public class ClientRequestHandlingThread extends Thread {
 	@Override
 	public void run() {
 		try {
+            Socket clientSocket = socket_.accept();
 			while(true) {
-				// accept requests from clients for the entire lifetime
-				Socket clientSocket = socket_.accept();
+				// accept requests from clients for the entire lifetime?
 				IRequestObject reqObj = (IRequestObject) new ObjectInputStream(clientSocket.getInputStream()).readObject();
 				//add this request to the local queue to execute them as per StateMachineModel rules.
 		        bankServer_.addNewRequest(reqObj, clientSocket, bankServer_);
@@ -43,5 +43,4 @@ public class ClientRequestHandlingThread extends Thread {
 			e.printStackTrace();
 		}
 	}
-	
 }

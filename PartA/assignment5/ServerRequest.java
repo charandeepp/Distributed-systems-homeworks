@@ -1,5 +1,7 @@
 package assignment5;
 
+import java.security.Timestamp;
+
 /**
  * Class which is used to denote the internal structure which represents each
  * client request
@@ -11,35 +13,42 @@ package assignment5;
  * @author rkandur
  *
  */
-public class ServerRequest {
+public class ServerRequest extends PeerMsgType{
 
-	private int sourceProcessId_;
+	public TimeStamp ts_ = new TimeStamp();
 	private long clockValue_;
 	private IRequest request_;
-	
+
 	public ServerRequest(int procId, long clkVal, IRequest req) {
-		setSourceProcessId(procId);
+        super(1);
+		setTimeStamp(clkVal,procId);
 		setClockValue(clkVal);
 		setRequest(req);
 	}
 
 	public ServerRequest(ServerRequest req) {
-		this.sourceProcessId_ = req.sourceProcessId_;
+        super(1);
+		this.ts_ = req.ts_;
 		this.clockValue_ = req.clockValue_;
 		this.request_ = req.request_;
 	}
 
 	public int getSourceProcessId() {
-		return sourceProcessId_;
+		return ts_.getProcessId();
 	}
 
-	public void setSourceProcessId(int sourceProcessId_) {
-		this.sourceProcessId_ = sourceProcessId_;
+	public void setTimeStamp(long clockValue_,int sourceProcessId_) {
+		ts_.updateClock(clockValue_);
+        ts_.updateProcessId(sourceProcessId_);
 	}
 
 	public long getClockValue() {
 		return clockValue_;
 	}
+
+    public long getOriginClockValue(){
+        return ts_.getClock();
+    }
 
 	public void setClockValue(long clockValue_) {
 		this.clockValue_ = clockValue_;
@@ -48,6 +57,10 @@ public class ServerRequest {
 	public IRequest getRequest() {
 		return request_;
 	}
+
+    public TimeStamp getTimeStamp(){
+        return ts_;
+    }
 
 	public void setRequest(IRequest request_) {
 		this.request_ = request_;

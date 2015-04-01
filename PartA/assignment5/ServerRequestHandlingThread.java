@@ -1,11 +1,13 @@
 package assignment5;
 
+import com.sun.corba.se.spi.activation.Server;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+import java.sql.Time;
 
 
 /**
@@ -41,28 +43,60 @@ public class ServerRequestHandlingThread extends Thread {
         
 		while(true){
             try {
-            	
-            	// infinitely accepts new requests for the other servers
+             	// infinitely accepts new requests for the other servers
 				Socket socket = socket_.accept();
-                ServerRequest req = (ServerRequest) new ObjectInputStream(socket.getInputStream()).readObject();
-                ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
-				
-                //add the request received to the current local queue which will be executed as per the rules
-                // framed by StateMachineModel
-                bankServer_.addServerRequest(req);
-
-                // NOTE: we are using processID+clockValue+"success" to indicate an ACK message
-				outs.writeObject("ack_" + req.getSourceProcessId() + req.getClockValue());
-				socket.close();
-				
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			}
-            
+                new MyHelperThread(socket,this.bankServer_).start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 		
 	}
+
+    private class MyHelperThread extends Thread{
+
+        BankServer bankServer_;
+        Socket socket_;
+        MyHelperThread(Socket socket, BankServer bankServer){
+            this.socket_ = socket;
+            this.bankServer_ = bankServer;
+        }
+
+        @Override
+        public void run() {
+            try {
+                while (true) {
+                    PeerMsgType req = req = (PeerMsgType) new ObjectInputStream(this.socket_.getInputStream()).readObject();
+                    switch(req.peer_msg_type){
+                        case 1:
+                            ServerRequest servRequest = (ServerRequest)req;
+                            new ServerRequestReceiverThread(servRequest,bankServer_).start();
+                        case 2:
+                            AckMessage ack_ = (AckMessage)req;
+                            AckReceiverThread ackThread = new AckReceiverThread(bankServer_,ack_);
+                            ackThread.start();
+                            ackThread.join();
+                    }
+                }
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+            catch(ClassNotFoundException e){
+                e.printStackTrace();
+            }
+            catch(InterruptedException e){
+                e.printStackTrace();
+            }
+            finally {
+                try {
+                    socket_.close();
+                }
+                catch(IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 	
 }
