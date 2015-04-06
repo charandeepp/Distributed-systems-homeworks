@@ -29,7 +29,7 @@ public class BankClient {
 	private static String CONFIG_FILE_PATH = "client.cfg";
 	private static Logger logger_ = ClientLogger.logger();
 
-	// hostname vs <processID, port>
+	// processID vs <hostname, port>
 	private static HashMap<Integer, HashMap<String, Integer>> serverIdVsHostPort_ = new HashMap<Integer, HashMap<String, Integer>>();
 	
 	/**
@@ -42,11 +42,14 @@ public class BankClient {
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
+				System.out.println(line);
 				if (!line.startsWith("#")) {
 					String[] toks = line.split(" ");
 					if (toks.length != 3) {
+						System.out.println("Continue ***************");
 						continue;
 					}
+					System.out.println("Inerting ***************");
                     HashMap<String,Integer> hostPortMap = new HashMap<String, Integer>();
                     hostPortMap.put(toks[0].trim(), Integer.parseInt(toks[2].trim()));
 					serverIdVsHostPort_.put(Integer.parseInt(toks[1].trim()), hostPortMap);
@@ -70,13 +73,14 @@ public class BankClient {
 		for(Integer pid : serverIdVsHostPort_.keySet()) {
 			HashMap<String, Integer> hp = serverIdVsHostPort_.get(pid);
 			BankClientThread t = new BankClientThread(pid, hp.entrySet().iterator().next().getKey(), hp.entrySet().iterator().next().getValue(), logger_);
+			t.start();
 			thGroup.add(t);
 		}
 		
 		// join on all threads
 		for(BankClientThread t : thGroup) {
 			try {
-				t.wait();
+				t.join();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -85,6 +89,13 @@ public class BankClient {
 		//send HALT messsage to server with processID = 0
 		try {
             HashMap<String, Integer> hp = serverIdVsHostPort_.get(0);
+            for(Integer i : serverIdVsHostPort_.keySet()) {
+            	System.out.println("i" + i);
+            	for(String s : serverIdVsHostPort_.get(i).keySet()) {
+            		System.out.println(s);
+            	}
+            	System.out.println("");
+            }
 			Socket socket = new Socket(hp.entrySet().iterator().next().getKey(), hp.entrySet().iterator().next().getValue());
 			ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());

@@ -11,6 +11,8 @@ package assignment5;
 
 public class TransferRequestB extends AbstractRequest {
 
+	private static final long serialVersionUID = 1L;
+	
 	Account source_;
 	Account destination_;
 	Integer amount_;

@@ -8,6 +8,8 @@ package assignment5;
  */
 public class HaltRequestB extends AbstractRequest {
 
+	private static final long serialVersionUID = 1L;
+	
 	private long startTime_;
 
 	public HaltRequestB() {

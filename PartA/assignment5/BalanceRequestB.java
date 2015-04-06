@@ -10,6 +10,8 @@ package assignment5;
  */
 public class BalanceRequestB extends AbstractRequest {
 
+	private static final long serialVersionUID = 1L;
+	
 	Account account_;
 	
 	public BalanceRequestB(Account account) {

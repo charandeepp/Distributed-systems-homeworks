@@ -11,6 +11,8 @@ package assignment5;
 
 public class NewAccountRequestB extends AbstractRequest {
 
+	private static final long serialVersionUID = 1L;
+	
 	private static Integer STARTING_BALANCE = 0;
 	private static Integer CURRENT_ACCOUNT_NUMBER = 1;
 	

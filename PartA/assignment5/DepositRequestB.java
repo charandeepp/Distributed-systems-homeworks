@@ -10,6 +10,8 @@ package assignment5;
  */
 public class DepositRequestB extends AbstractRequest {
 
+	private static final long serialVersionUID = 1L;
+	
 	private Account account_;
 	private Integer depositAmount_;
 	

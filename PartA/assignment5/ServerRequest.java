@@ -15,12 +15,16 @@ import java.security.Timestamp;
  */
 public class ServerRequest extends PeerMsgType{
 
+	private static final long serialVersionUID = 1L;
+
 	public TimeStamp ts_ = new TimeStamp();
 	private long clockValue_;
 	private IRequest request_;
 
 	public ServerRequest(int procId, long clkVal, IRequest req) {
         super(1);
+        System.out.println(procId);
+        System.out.println(clkVal);
 		setTimeStamp(clkVal,procId);
 		setClockValue(clkVal);
 		setRequest(req);

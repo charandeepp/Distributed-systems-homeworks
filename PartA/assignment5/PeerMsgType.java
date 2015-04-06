@@ -7,7 +7,9 @@ import java.io.Serializable;
  */
 public class PeerMsgType implements Serializable {
 
-    public static final int RequestMsg = 1;
+	private static final long serialVersionUID = 1L;
+	
+	public static final int RequestMsg = 1;
     public static final int AckMsg = 2;
 
     public int peer_msg_type;

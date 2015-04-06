@@ -65,7 +65,7 @@ public class BankServer {
 
     public HashMap<TimeStamp,HashSet<Integer>> ackSet = new HashMap<TimeStamp,HashSet<Integer>>();
 
-    public Integer ackLock;
+    public Integer ackLock = 3;
 
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
@@ -77,9 +77,9 @@ public class BankServer {
 	
 	// lock variable to maintain the local queue in state machine model
 	// TODO: need to work on synchronization part. use this when handling sync logic
-	public Integer reqLock_;
+	public Integer reqLock_ = 1;
 
-    public Integer clientDSLock_;
+    public Integer clientDSLock_ = 2;
 
 	// queue which holds all the yet to be executed requests
 	public PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(10,new Comparator<ServerRequest>() {
@@ -95,9 +95,20 @@ public class BankServer {
 	
 	public BankServer(int procId) {
         processId_ = procId;
+        init();
         loadFromConfig();
 	}
 	
+	private void init() {
+
+		Integer account = 1;
+		for(; account <= 10; ++account) {
+			Account a = new Account(account, 1000, account.toString()+"F", account.toString()+"L", account.toString()+"A");
+			updateStore(a);
+		}
+		
+	}
+
 	// TODO: should call this when we know that there are no other messages from
 	// the other servers
 	synchronized void execute() {
@@ -295,6 +306,7 @@ public class BankServer {
 	public void addNewRequest(IRequestObject reqObject, Socket clientSocket, BankServer bankServer) {
 		RequestType type = (RequestType)reqObject.reqType();
 		ServerRequest sreq = null;
+		System.out.println("IN addNewRequest ************************");
 		switch(type) {
 			case newaccount: {
 				sreq = addNewAccountRequest(reqObject, clientSocket);
@@ -423,11 +435,22 @@ public class BankServer {
 
 		//TODO: assuming id will be the 0th argument
 		BankServer bankServer = new BankServer(Integer.parseInt(args[0]));
-		new ClientRequestHandlingThread(clientReqPort_, bankServer);
-		new ServerRequestHandlingThread(serverReqPort_, bankServer);
-		new ServerJobExecuterThread(bankServer);
+		ClientRequestHandlingThread t1 = new ClientRequestHandlingThread(clientReqPort_, bankServer);
+		ServerRequestHandlingThread t2 = new ServerRequestHandlingThread(serverReqPort_, bankServer);
+		ServerJobExecuterThread t3 = new ServerJobExecuterThread(bankServer);
 		
-		//TODO: should wait here until we receive a halt message. should i use a join?
+		t1.start();
+		t2.start();
+		t3.start();
+		
+		try {
+			t1.join();
+			t2.join();
+			t3.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 	public void addServerRequest(ServerRequest req) {
@@ -439,7 +462,6 @@ public class BankServer {
 
 	public void addClientRequest(ServerRequest sreq, Socket clientSocket) {
 		synchronized(reqLock_) {
-			//requests_.add(sreq);
 			directRequestVsConnection_.put(sreq, clientSocket);
 		}
 	}

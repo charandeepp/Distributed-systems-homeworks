@@ -10,6 +10,8 @@ package assignment5;
  */
 public abstract class AbstractRequest implements IRequest {
 
+	private static final long serialVersionUID = 1L;
+
 	public abstract Object execute();
 	
 }
