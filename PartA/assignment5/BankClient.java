@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.logging.Logger;
 
-import javafx.util.Pair;
 
 /**
  * client to the {@link BankServer} which performs some transactions as
@@ -31,7 +30,7 @@ public class BankClient {
 	private static Logger logger_ = ClientLogger.logger();
 
 	// hostname vs <processID, port>
-	private static HashMap<Integer, Pair<String, Integer>> serverIdVsHostPort_ = new HashMap<Integer, Pair<String, Integer>>();
+	private static HashMap<Integer, HashMap<String, Integer>> serverIdVsHostPort_ = new HashMap<Integer, HashMap<String, Integer>>();
 	
 	/**
 	 * Helper method to pick up initial config information from cfg file
@@ -48,8 +47,9 @@ public class BankClient {
 					if (toks.length != 3) {
 						continue;
 					}
-					serverIdVsHostPort_.put(Integer.parseInt(toks[1].trim()), new Pair<String, Integer>(
-							toks[0].trim(), Integer.parseInt(toks[2].trim())));
+                    HashMap<String,Integer> hostPortMap = new HashMap<String, Integer>();
+                    hostPortMap.put(toks[0].trim(), Integer.parseInt(toks[2].trim()));
+					serverIdVsHostPort_.put(Integer.parseInt(toks[1].trim()), hostPortMap);
 				}
 			}
 			bufferedReader.close();
@@ -68,8 +68,9 @@ public class BankClient {
 		
 		// create client threads which are equal to the number of server processes
 		for(Integer pid : serverIdVsHostPort_.keySet()) {
-			Pair<String, Integer> hp = serverIdVsHostPort_.get(pid);
-			BankClientThread t = new BankClientThread(pid, hp.getKey(), hp.getValue(), logger_);
+			HashMap<String, Integer> hp = serverIdVsHostPort_.get(pid);
+            HashMap.Entry<String,Integer> entry = hp.entrySet().iterator().next();
+			BankClientThread t = new BankClientThread(pid, entry.getKey(), entry.getValue(), logger_);
 			thGroup.add(t);
 		}
 		
@@ -84,8 +85,9 @@ public class BankClient {
 		
 		//send HALT messsage to server with processID = 0
 		try {
-			
-			Socket socket = new Socket(serverIdVsHostPort_.get(0).getKey(), serverIdVsHostPort_.get(0).getValue());
+            HashMap<String, Integer> hp = serverIdVsHostPort_.get(0);
+            HashMap.Entry<String,Integer> entry = hp.entrySet().iterator().next();
+			Socket socket = new Socket(entry.getKey(), entry.getValue());
 			ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 			
