@@ -24,15 +24,16 @@ public class ServerRequestReceiverThread extends Thread {
             //add the request received to the current local queue which will be executed as per the rules
             // framed by StateMachineModel
             bankServer_.addServerRequest(req);
-            if (req.getSourceProcessId() == bankServer_.processId_ || bankServer_.directRequestVsConnection_.isEmpty()) {
+            if (req.getSourceProcessId() == bankServer_.processId_) {
 
             }
             else {
                 while (true) {
                     synchronized (bankServer_.clientDSLock_) {
+                    	if(bankServer_.directRequestVsConnection_.isEmpty()) {
+                    		break;
+                    	}
                         clientReq = (ServerRequest) bankServer_.directRequestVsConnection_.entrySet().iterator().next().getKey();
-                        System.out.println(clientReq.ts_.getClock()+"_"+clientReq.ts_.getProcessId());
-                        System.out.println(req.ts_.getClock()+"_"+req.ts_.getProcessId());
                         if (req.ts_.compareTimeStamps(clientReq.ts_) == 1) {
                             break;
                         }
