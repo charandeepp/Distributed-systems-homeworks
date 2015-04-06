@@ -17,7 +17,7 @@ public class ServerRequest extends PeerMsgType{
 	private static final long serialVersionUID = 1L;
 
 	public TimeStamp ts_ = new TimeStamp();
-	private long clockValue_;
+	private Long clockValue_;
 	private IRequest request_;
 
 	public ServerRequest(int procId, long clkVal, IRequest req) {
@@ -36,6 +36,19 @@ public class ServerRequest extends PeerMsgType{
 		this.request_ = req.request_;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof ServerRequest) {
+			return (((ServerRequest)obj).getTimeStamp()).equals(this.getTimeStamp());
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.getTimeStamp().hashCode();
+	}
+	
 	public int getSourceProcessId() {
 		return ts_.getProcessId();
 	}

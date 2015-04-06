@@ -31,9 +31,11 @@ public class ServerRequestReceiverThread extends Thread {
                 while (true) {
                     synchronized (bankServer_.clientDSLock_) {
                         clientReq = (ServerRequest) bankServer_.directRequestVsConnection_.entrySet().iterator().next().getKey();
-                    }
-                    if (req.ts_.compareTimeStamps(clientReq.ts_) == 1) {
-                        break;
+                        System.out.println(clientReq.ts_.getClock()+"_"+clientReq.ts_.getProcessId());
+                        System.out.println(req.ts_.getClock()+"_"+req.ts_.getProcessId());
+                        if (req.ts_.compareTimeStamps(clientReq.ts_) == 1) {
+                            break;
+                        }
                     }
                 }
             }
@@ -51,6 +53,7 @@ public class ServerRequestReceiverThread extends Thread {
                 selfSocket.close();
 
                 for (String host : bankServer_.peerServers_.keySet()) {
+                		System.out.println("Sending ack to " + host + ack_.getAckClk()+"_"+ack_.getAckProcessId());
                         //broadcast this ack to all other servers
                         Socket peerSocket = new Socket(host, bankServer_.peerServers_.get(host));
                         new ObjectOutputStream(peerSocket.getOutputStream()).writeObject(ack_);

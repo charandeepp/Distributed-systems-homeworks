@@ -67,7 +67,7 @@ public class BankServer {
     public HashMap<TimeStamp,HashSet<Integer>> ackSet = new HashMap<TimeStamp,HashSet<Integer>>();
 
     public Integer ackLock = 3;
-
+    
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
 
@@ -112,34 +112,40 @@ public class BankServer {
 
 	// TODO: should call this when we know that there are no other messages from
 	// the other servers
-	synchronized void execute() {
-		
-		if(requests_.isEmpty()) {
-			return;
-		}
-		if(!okToProceed(requests_.peek())) {
-			System.out.println("Not ok to proceed ********************************");
-			return;
-		}
-		ServerRequest r = requests_.poll();
-		ResponseObject resp = serveRequest(r.getRequest());
-		logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
-		// if it is a direct request, we also need to send a response back to the client
-		if(directRequestVsConnection_.containsKey(r)) {
-			try {
-				Socket cs = directRequestVsConnection_.remove(r);
-				new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
-				cs.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+	void execute() {
+	
+		synchronized (reqLock_) {
+			if(requests_.isEmpty()) {
+				return;
 			}
-		}
-		
-		if(r.getRequest() instanceof HaltRequestB) {
-			// we should exit when we encounter a HALT request
-			// TODO: I am not sure if this is the right way to do it. check if
-			// we can do it in a better way
-			System.exit(0);
+			if(!okToProceed(requests_.peek())) {
+				return;
+			}
+			ServerRequest r = requests_.poll();
+			ResponseObject resp = serveRequest(r.getRequest());
+			logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
+			// if it is a direct request, we also need to send a response back to the client
+			synchronized (clientDSLock_) {
+				if(directRequestVsConnection_.containsKey(r)) {
+					System.out.println("Key exists************");
+					try {
+						Socket cs = directRequestVsConnection_.remove(r);
+						System.out.println("Acquired Socket *************");
+						new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
+						System.out.println("Return ous *************");
+						cs.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			
+			if(r.getRequest() instanceof HaltRequestB) {
+				// we should exit when we encounter a HALT request
+				// TODO: I am not sure if this is the right way to do it. check if
+				// we can do it in a better way
+				System.exit(0);
+			}
 		}
 	}
 	
@@ -147,15 +153,14 @@ public class BankServer {
 	// TODO: this will anyways happen. But what if we miss some acknowledgement?
 	// shouldn't we check other server Requests that have a higher timestamp?
 	private boolean okToProceed(ServerRequest req) {
-		System.out.println("Size of ackset is " + ackSet.size()+ " ******************");
-		System.out.println("Size of request Set = " + requests_.size());
+
         synchronized (ackLock) {
-       	if(ackSet.containsKey(req.getTimeStamp())) {
-	            if (ackSet.get(req.getTimeStamp()).size() == 3) {
-	                return true;
-	            }
-        	}
-        }
+	       	if(ackSet.containsKey(req.getTimeStamp())) {
+		            if (ackSet.get(req.getTimeStamp()).size() == 3) {
+		                return true;
+		            }
+	        	}
+	        }
 		return false;
 	}
 

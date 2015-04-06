@@ -29,14 +29,10 @@ public class TimeStamp implements Serializable {
     }
 
     int compareTimeStamps(TimeStamp t2){
-
-        if(this.clk < t2.clk || ((this.clk==t2.clk)&&(this.processId<t2.processId))){
+    	if(this.clk < t2.clk || ((this.clk.equals(t2.clk))&&(this.processId<t2.processId))) {
             return 1;
         }
-        else if(this.clk == t2.clk && this.processId == t2.processId)
-            return 0;
-        else
-            return -1;
+        return -1;
     }
     
     @Override
