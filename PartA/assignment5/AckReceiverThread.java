@@ -21,8 +21,9 @@ public class AckReceiverThread extends Thread {
         HashSet<Integer> pIds;
         synchronized (bankServer_.ackLock) {
             pIds = bankServer_.ackSet.get(originTimeStamp);
-            if(pIds == null)
+            if(pIds == null) {
             	pIds = new HashSet<Integer>();
+            }
             pIds.add(ack_.getAckProcessId());
             bankServer_.ackSet.put(originTimeStamp, pIds);
         }

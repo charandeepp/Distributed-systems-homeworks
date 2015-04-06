@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.PriorityQueue;
 import java.util.logging.Logger;
 
@@ -58,7 +59,7 @@ public class BankServer {
 	
 	// map to hold the requests which are made by client directly to this server
 	// and hold a socket object on which response needs to be sent back
-	public HashMap<ServerRequest, Socket> directRequestVsConnection_ = new HashMap<ServerRequest, Socket>();
+	public LinkedHashMap<ServerRequest, Socket> directRequestVsConnection_ = new LinkedHashMap<ServerRequest, Socket>();
 	
 	// map to hold the direct requests vs the Acknowledgements made by the other servers
 	public HashMap<ServerRequest, HashSet<String>> reqVsAcks_ = new HashMap<ServerRequest, HashSet<String>>();
