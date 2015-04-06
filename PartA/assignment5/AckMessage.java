@@ -5,7 +5,9 @@ package assignment5;
  */
 public class AckMessage extends PeerMsgType{
 
-    private Integer processId;
+	private static final long serialVersionUID = 1L;
+	
+	private Integer processId;
     private long clk;
     private TimeStamp tsp;
 

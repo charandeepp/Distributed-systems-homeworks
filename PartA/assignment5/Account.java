@@ -1,5 +1,7 @@
 package assignment5;
 
+import java.io.Serializable;
+
 
 /**
  * class which denotes the details of an {@link Account}
@@ -7,7 +9,9 @@ package assignment5;
  * @author rkandur
  *
  */
-public class Account {
+public class Account implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private Integer accountID_;			//	account ID
 	private Integer balance_;			// balance

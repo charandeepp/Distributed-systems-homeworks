@@ -1,6 +1,5 @@
 package assignment5;
 
-import java.security.Timestamp;
 
 /**
  * Class which is used to denote the internal structure which represents each
