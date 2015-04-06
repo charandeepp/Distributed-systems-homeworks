@@ -82,7 +82,7 @@ public class BankServer {
     public Integer clientDSLock_;
 
 	// queue which holds all the yet to be executed requests
-	public PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(new Comparator<ServerRequest>() {
+	public PriorityQueue<ServerRequest> requests_ = new PriorityQueue<ServerRequest>(10,new Comparator<ServerRequest>() {
 		@Override
 		public int compare(ServerRequest r1, ServerRequest r2) {
 			// prioritize based on lamport clock values as per total ordering rules in StateMachineModel

@@ -69,8 +69,7 @@ public class BankClient {
 		// create client threads which are equal to the number of server processes
 		for(Integer pid : serverIdVsHostPort_.keySet()) {
 			HashMap<String, Integer> hp = serverIdVsHostPort_.get(pid);
-            HashMap.Entry<String,Integer> entry = hp.entrySet().iterator().next();
-			BankClientThread t = new BankClientThread(pid, entry.getKey(), entry.getValue(), logger_);
+			BankClientThread t = new BankClientThread(pid, hp.entrySet().iterator().next().getKey(), hp.entrySet().iterator().next().getValue(), logger_);
 			thGroup.add(t);
 		}
 		
@@ -86,8 +85,7 @@ public class BankClient {
 		//send HALT messsage to server with processID = 0
 		try {
             HashMap<String, Integer> hp = serverIdVsHostPort_.get(0);
-            HashMap.Entry<String,Integer> entry = hp.entrySet().iterator().next();
-			Socket socket = new Socket(entry.getKey(), entry.getValue());
+			Socket socket = new Socket(hp.entrySet().iterator().next().getKey(), hp.entrySet().iterator().next().getValue());
 			ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 			
