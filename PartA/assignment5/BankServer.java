@@ -117,6 +117,7 @@ public class BankServer {
 			return;
 		}
 		if(!okToProceed(requests_.peek())) {
+			System.out.println("Not ok to proceed ********************************");
 			return;
 		}
 		ServerRequest r = requests_.poll();
@@ -145,10 +146,14 @@ public class BankServer {
 	// TODO: this will anyways happen. But what if we miss some acknowledgement?
 	// shouldn't we check other server Requests that have a higher timestamp?
 	private boolean okToProceed(ServerRequest req) {
+		System.out.println("Size of ackset is " + ackSet.size()+ " ******************");
+		System.out.println("Size of request Set = " + requests_.size());
         synchronized (ackLock) {
-            if (ackSet.get(req.getTimeStamp()).size() == 3) {
-                return true;
-            }
+       	if(ackSet.containsKey(req.getTimeStamp())) {
+	            if (ackSet.get(req.getTimeStamp()).size() == 3) {
+	                return true;
+	            }
+        	}
         }
 		return false;
 	}
@@ -455,6 +460,7 @@ public class BankServer {
 
 	public void addServerRequest(ServerRequest req) {
 		synchronized(reqLock_) {
+			System.out.println("In addServerRequest ************************");
 			clock_.updateAndGetClockValue(req.getClockValue());
 			requests_.add(req);
 		}

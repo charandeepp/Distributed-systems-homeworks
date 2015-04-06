@@ -52,11 +52,13 @@ public class ClientRequestHandlingThread extends Thread {
 
         @Override
         public void run() {
-            try {
-                IRequestObject reqObj = (IRequestObject) new ObjectInputStream(this.mSocket.getInputStream()).readObject();
-                System.out.println("Read object " + reqObj.reqType());
-                //add this request to the local queue to execute them as per StateMachineModel rules.
-                this.mBankServer.addNewRequest(reqObj, this.mSocket, this.mBankServer);
+        	try {
+        		for(int i = 0; i < 100; ++i) {
+	                IRequestObject reqObj = (IRequestObject) new ObjectInputStream(this.mSocket.getInputStream()).readObject();
+	                System.out.println("Read object " + reqObj.reqType());
+	                //add this request to the local queue to execute them as per StateMachineModel rules.
+	                this.mBankServer.addNewRequest(reqObj, this.mSocket, this.mBankServer);
+        		}
             }
             catch(IOException e){
                 e.printStackTrace();

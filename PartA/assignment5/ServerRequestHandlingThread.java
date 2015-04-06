@@ -61,16 +61,18 @@ public class ServerRequestHandlingThread extends Thread {
         @Override
         public void run() {
             try {
-                while (true) {
-                    PeerMsgType req = req = (PeerMsgType) new ObjectInputStream(this.socket_.getInputStream()).readObject();
-                    switch(req.peer_msg_type){
-                        case 1:
-                            ServerRequest servRequest = (ServerRequest)req;
-                            new ServerRequestReceiverThread(servRequest,bankServer_).start();
-                        case 2:
-                            AckMessage ack_ = (AckMessage)req;
-                            new AckReceiverThread(bankServer_,ack_).start();
-                    }
+            
+                PeerMsgType req = (PeerMsgType) new ObjectInputStream(this.socket_.getInputStream()).readObject();
+                switch(req.peer_msg_type){
+                    case 1:
+                        ServerRequest servRequest = (ServerRequest)req;
+                        new ServerRequestReceiverThread(servRequest,bankServer_).start();
+                        break;
+                    case 2:
+                        AckMessage ack_ = (AckMessage)req;
+                        new AckReceiverThread(bankServer_,ack_).start();
+                        break;
+                
                 }
             }
             catch(IOException e){

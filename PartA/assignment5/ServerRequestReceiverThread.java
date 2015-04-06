@@ -30,7 +30,7 @@ public class ServerRequestReceiverThread extends Thread {
             else {
                 while (true) {
                     synchronized (bankServer_.clientDSLock_) {
-                        clientReq = (ServerRequest) bankServer_.directRequestVsConnection_.entrySet().iterator().next();
+                        clientReq = (ServerRequest) bankServer_.directRequestVsConnection_.entrySet().iterator().next().getKey();
                     }
                     if (req.ts_.compareTimeStamps(clientReq.ts_) == 1) {
                         break;

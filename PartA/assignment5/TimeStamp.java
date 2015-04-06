@@ -1,14 +1,18 @@
 package assignment5;
 
+import java.io.Serializable;
+
 /**
  * Created by Charandeep on 3/31/15.
  */
-public class TimeStamp {
+public class TimeStamp implements Serializable {
 
-    private long clk;
+	private static final long serialVersionUID = 1L;
+
+	private Long clk;
     private Integer processId;
 
-    void updateClock(long clk){
+    void updateClock(Long clk){
         this.clk = clk;
     }
 
@@ -33,6 +37,22 @@ public class TimeStamp {
             return 0;
         else
             return -1;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+    	if(obj instanceof TimeStamp) {
+    		if(this.clk.equals(((TimeStamp)obj).clk) && this.processId.equals(((TimeStamp)obj).processId)) {
+	            return true;
+    		}
+    	}
+    	return false;
+    	
+    }
+    
+    @Override
+    public int hashCode() {
+    	return clk.hashCode() ^ processId.hashCode();
     }
 
 }
