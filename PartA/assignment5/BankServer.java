@@ -65,6 +65,8 @@ public class BankServer {
 
     public HashMap<TimeStamp,HashSet<Integer>> ackSet = new HashMap<TimeStamp,HashSet<Integer>>();
 
+    public Integer ackLock;
+
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
 
@@ -132,9 +134,11 @@ public class BankServer {
 	// TODO: this will anyways happen. But what if we miss some acknowledgement?
 	// shouldn't we check other server Requests that have a higher timestamp?
 	private boolean okToProceed(ServerRequest req) {
-		if(ackSet.get(req.getTimeStamp()).size() == 3) {
-			return true;
-		}
+        synchronized (ackLock) {
+            if (ackSet.get(req.getTimeStamp()).size() == 3) {
+                return true;
+            }
+        }
 		return false;
 	}
 
@@ -338,7 +342,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.halt.name()
 				+ " <" + "NONE" + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return null;
 	}
 
@@ -351,7 +355,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + bro.accountID() + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -367,7 +371,7 @@ public class BankServer {
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + tro.sourceID() + ", " + tro.destinationID() + ", "
 				+ tro.amount() + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -380,7 +384,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + wro.accountID() + ", " + wro.amount() + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -393,7 +397,7 @@ public class BankServer {
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + dro.accountID() + ", " + dro.amount() + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 
@@ -407,7 +411,7 @@ public class BankServer {
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
 				+ " <" + aro.firstName() + ", " + aro.lastName() + ", "
 				+ aro.address() + ">");
-		//addClientRequest(sreq, clientSocket);
+		addClientRequest(sreq, clientSocket);
 		return sreq;
 	}
 	
@@ -433,12 +437,12 @@ public class BankServer {
 		}
 	}
 
-	/*public void addClientRequest(ServerRequest sreq, Socket clientSocket) {
+	public void addClientRequest(ServerRequest sreq, Socket clientSocket) {
 		synchronized(reqLock_) {
-			requests_.add(sreq);
+			//requests_.add(sreq);
 			directRequestVsConnection_.put(sreq, clientSocket);
 		}
-	}*/
+	}
 
 	public void updateAcksToServer(ServerRequest request, HashSet<String> acks) {
 		reqVsAcks_.put(request, acks);

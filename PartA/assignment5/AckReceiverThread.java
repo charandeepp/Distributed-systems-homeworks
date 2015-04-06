@@ -20,9 +20,11 @@ public class AckReceiverThread extends Thread {
     public void run() {
         TimeStamp originTimeStamp = ack_.getOriginTimeStamp();
         HashSet<Integer> pIds;
-        pIds = bankServer_.ackSet.get(originTimeStamp);
-        pIds.add(ack_.getAckProcessId());
-        bankServer_.ackSet.put(originTimeStamp,pIds);
+        synchronized (bankServer_.ackLock) {
+            pIds = bankServer_.ackSet.get(originTimeStamp);
+            pIds.add(ack_.getAckProcessId());
+            bankServer_.ackSet.put(originTimeStamp, pIds);
+        }
     }
 
 }

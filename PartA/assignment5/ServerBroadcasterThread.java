@@ -23,9 +23,9 @@ public class ServerBroadcasterThread extends Thread {
     private ServerRequest request_;
     private HashMap<String, Integer> servers_;
     private BankServer bankServer_;
-    HashSet<String> acks;
+    //HashSet<String> acks;
 
-    private Integer acksLock_;
+    //private Integer acksLock_;
 
     public ServerBroadcasterThread(HashMap<String, Integer> peerServers, ServerRequest req, BankServer bankServer) {
         servers_ = peerServers;
@@ -39,8 +39,8 @@ public class ServerBroadcasterThread extends Thread {
         // TODO: creating a new connection for each message to be communicated.
         // should change this to create a connection once and use them till the end.
 
-        acks = new HashSet<String>();
-        ArrayList<HelperThread> HelperThreadsList = new ArrayList<HelperThread>();
+        //acks = new HashSet<String>();
+        //ArrayList<HelperThread> HelperThreadsList = new ArrayList<HelperThread>();
 
         // NOTE: making a copy of the original ServerRequest method as we should
         // not modify the actual request which is already in the queue
@@ -60,14 +60,14 @@ public class ServerBroadcasterThread extends Thread {
             new ObjectOutputStream(selfSocket.getOutputStream()).writeObject(sendingReq);
 
             // ack message from the server
-            acks.add(new ObjectInputStream(selfSocket.getInputStream()).readObject().toString());
+            /*synchronized (acksLock_) {
+                acks.add(new ObjectInputStream(selfSocket.getInputStream()).readObject().toString());
+            }*/
             selfSocket.close();
         }
 
         //end
         catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
@@ -77,9 +77,8 @@ public class ServerBroadcasterThread extends Thread {
                 //broadcast this request to all other servers
                 Socket peerSocket = new Socket(host, servers_.get(host));
 
-                HelperThread mHelper = new HelperThread(peerSocket, sendingReq);
-                mHelper.start();
-                HelperThreadsList.add(mHelper);
+                new ObjectOutputStream(peerSocket.getOutputStream()).writeObject(sendingReq);
+                peerSocket.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -88,7 +87,7 @@ public class ServerBroadcasterThread extends Thread {
             // to validate if a message on the top of the queue in server
             // should be executed or not
 
-        Iterator mIterator = HelperThreadsList.iterator();
+        /*Iterator mIterator = HelperThreadsList.iterator();
         while(mIterator.hasNext()) {
             try {
                 ((HelperThread) mIterator.next()).join();
@@ -96,15 +95,15 @@ public class ServerBroadcasterThread extends Thread {
             catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
-        synchronized (bankServer_.reqLock_) {
+        /*synchronized (bankServer_.reqLock_) {
             bankServer_.clock_.updateAndGetClockValue();
-            bankServer_.updateAcksToServer(request_, acks);
-        }
+            //bankServer_.updateAcksToServer(request_, acks);
+        }*/
     }
 
-    private class HelperThread extends Thread {
+    /*private class HelperThread extends Thread {
         private Socket peerSocket;
         private ServerRequest sendingReq;
 
@@ -116,21 +115,19 @@ public class ServerBroadcasterThread extends Thread {
         @Override
         public void run() {
             try {
-                new ObjectOutputStream(this.peerSocket.getOutputStream()).writeObject(sendingReq);
+
                 // ack message from each peer servers
-                synchronized (acksLock_) {
+                /*synchronized (acksLock_) {
                     acks.add(new ObjectInputStream(this.peerSocket.getInputStream()).readObject().toString());
                 }
-                this.peerSocket.close();
+
             } catch (IOException e) {
-                e.printStackTrace();
-            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
 
         }
 
 
-    }
+    }*/
 
 }

@@ -73,9 +73,7 @@ public class ServerRequestHandlingThread extends Thread {
                             new ServerRequestReceiverThread(servRequest,bankServer_).start();
                         case 2:
                             AckMessage ack_ = (AckMessage)req;
-                            AckReceiverThread ackThread = new AckReceiverThread(bankServer_,ack_);
-                            ackThread.start();
-                            ackThread.join();
+                            new AckReceiverThread(bankServer_,ack_).start();
                     }
                 }
             }
@@ -83,9 +81,6 @@ public class ServerRequestHandlingThread extends Thread {
                 e.printStackTrace();
             }
             catch(ClassNotFoundException e){
-                e.printStackTrace();
-            }
-            catch(InterruptedException e){
                 e.printStackTrace();
             }
             finally {

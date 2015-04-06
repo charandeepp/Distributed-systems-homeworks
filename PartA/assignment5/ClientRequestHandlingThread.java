@@ -30,17 +30,39 @@ public class ClientRequestHandlingThread extends Thread {
 	@Override
 	public void run() {
 		try {
-            Socket clientSocket = socket_.accept();
+
 			while(true) {
+                Socket clientSocket = socket_.accept();
 				// accept requests from clients for the entire lifetime?
-				IRequestObject reqObj = (IRequestObject) new ObjectInputStream(clientSocket.getInputStream()).readObject();
-				//add this request to the local queue to execute them as per StateMachineModel rules.
-		        bankServer_.addNewRequest(reqObj, clientSocket, bankServer_);
+                new ClientHandlerHelperThread(clientSocket,bankServer_).start();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
 		}
 	}
+
+    public class ClientHandlerHelperThread extends Thread{
+        private Socket mSocket;
+        private BankServer mBankServer;
+
+        public ClientHandlerHelperThread(Socket socket, BankServer bankServer){
+            this.mSocket = socket;
+            this.mBankServer = bankServer;
+        }
+
+        @Override
+        public void run() {
+            try {
+                IRequestObject reqObj = (IRequestObject) new ObjectInputStream(this.mSocket.getInputStream()).readObject();
+                //add this request to the local queue to execute them as per StateMachineModel rules.
+                this.mBankServer.addNewRequest(reqObj, this.mSocket, this.mBankServer);
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+            catch(ClassNotFoundException e){
+                e.printStackTrace();
+            }
+        }
+    }
 }
