@@ -127,13 +127,9 @@ public class BankServer {
 			// if it is a direct request, we also need to send a response back to the client
 			synchronized (clientDSLock_) {
 				if(directRequestVsConnection_.containsKey(r)) {
-					System.out.println("Key exists************");
 					try {
 						Socket cs = directRequestVsConnection_.remove(r);
-						System.out.println("Acquired Socket *************");
 						new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
-						System.out.println("Return ous *************");
-						cs.close();
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
