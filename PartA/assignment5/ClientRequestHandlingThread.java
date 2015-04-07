@@ -72,12 +72,6 @@ public class ClientRequestHandlingThread extends Thread {
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			} 
-			finally {
-				try {
-					mSocket.close();
-				} catch (IOException e) {
-				}
-			}
         }
     }
 }

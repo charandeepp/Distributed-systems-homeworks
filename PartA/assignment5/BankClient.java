@@ -92,9 +92,11 @@ public class BankClient {
 			HaltRequestObject reqObject = new HaltRequestObject();
 			logger_.info("0" + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.halt.name());
 			outs.writeObject(reqObject);
+			System.out.println("HALT WRITTEN");
 			
 			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 			ResponseObject reqResponse = (ResponseObject) ins.readObject();
+			System.out.println("HALT RESPONSE");
 			logger_.info("0" + " " + " RSP " + System.currentTimeMillis() + " " + reqResponse.getResponse());
 			
 			socket.close();

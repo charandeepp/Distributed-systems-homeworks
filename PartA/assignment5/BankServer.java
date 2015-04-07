@@ -131,7 +131,7 @@ public class BankServer {
 				if(directRequestVsConnection_.containsKey(r)) {
 					try {
 						Socket cs = directRequestVsConnection_.remove(r);
-						if(clientouts == null){
+						if(clientouts == null || r.getRequest() instanceof HaltRequestB){
 							clientouts = new ObjectOutputStream(cs.getOutputStream());
 						}
 						clientouts.writeObject(resp);
