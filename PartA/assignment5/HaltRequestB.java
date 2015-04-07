@@ -18,7 +18,6 @@ public class HaltRequestB extends AbstractRequest {
 	
 	@Override
 	public RequestResponse execute() {
-		// TODO not sure if there is anything that needs to done in execute
 		System.out.println("Halting the server process !!!");
 		return new RequestResponse(Boolean.TRUE, new String("SUCCESS"), new String("SUCCESS"));
 	}

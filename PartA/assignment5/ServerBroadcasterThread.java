@@ -17,9 +17,6 @@ public class ServerBroadcasterThread extends Thread {
     private ServerRequest request_;
     private HashMap<String, Integer> servers_;
     private BankServer bankServer_;
-    //HashSet<String> acks;
-
-    //private Integer acksLock_;
 
     public ServerBroadcasterThread(HashMap<String, Integer> peerServers, ServerRequest req, BankServer bankServer) {
         servers_ = peerServers;
@@ -29,12 +26,6 @@ public class ServerBroadcasterThread extends Thread {
 
     @Override
     public void run() {
-
-        // TODO: creating a new connection for each message to be communicated.
-        // should change this to create a connection once and use them till the end.
-
-        //acks = new HashSet<String>();
-        //ArrayList<HelperThread> HelperThreadsList = new ArrayList<HelperThread>();
 
         // NOTE: making a copy of the original ServerRequest method as we should
         // not modify the actual request which is already in the queue
@@ -52,14 +43,8 @@ public class ServerBroadcasterThread extends Thread {
         try {
             Socket selfSocket = new Socket(bankServer_.hostName_, bankServer_.serverReqPort_);
             new ObjectOutputStream(selfSocket.getOutputStream()).writeObject(sendingReq);
-
-            // ack message from the server
-            /*synchronized (acksLock_) {
-                acks.add(new ObjectInputStream(selfSocket.getInputStream()).readObject().toString());
-            }*/
             selfSocket.close();
         }
-
         //end
         catch (IOException e) {
             e.printStackTrace();
@@ -77,51 +62,9 @@ public class ServerBroadcasterThread extends Thread {
                 e.printStackTrace();
             }
         }
-            // update the ack messages to the BankServer, this will be used
-            // to validate if a message on the top of the queue in server
-            // should be executed or not
-
-        /*Iterator mIterator = HelperThreadsList.iterator();
-        while(mIterator.hasNext()) {
-            try {
-                ((HelperThread) mIterator.next()).join();
-            }
-            catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }*/
-
-        /*synchronized (bankServer_.reqLock_) {
-            bankServer_.clock_.updateAndGetClockValue();
-            //bankServer_.updateAcksToServer(request_, acks);
-        }*/
+        // update the ack messages to the BankServer, this will be used
+        // to validate if a message on the top of the queue in server
+        // should be executed or not
     }
-
-    /*private class HelperThread extends Thread {
-        private Socket peerSocket;
-        private ServerRequest sendingReq;
-
-        HelperThread(Socket socket, ServerRequest sendingReq) {
-            this.peerSocket = socket;
-            this.sendingReq = sendingReq;
-        }
-
-        @Override
-        public void run() {
-            try {
-
-                // ack message from each peer servers
-                /*synchronized (acksLock_) {
-                    acks.add(new ObjectInputStream(this.peerSocket.getInputStream()).readObject().toString());
-                }
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-
-
-    }*/
 
 }

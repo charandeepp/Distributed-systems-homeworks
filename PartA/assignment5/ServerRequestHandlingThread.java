@@ -33,10 +33,6 @@ public class ServerRequestHandlingThread extends Thread {
 	
 	@Override
 	public void run() {
-
-		// TODO: intentionally doing this sequentially, must check if this needs to be made multi-threaded?
-		//TODO: can we save the connections rather than making a new connection per communication?
-        
 		while(true){
             try {
              	// infinitely accepts new requests for the other servers
@@ -46,7 +42,6 @@ public class ServerRequestHandlingThread extends Thread {
                 e.printStackTrace();
             }
         }
-		
 	}
 
     private class MyHelperThread extends Thread{

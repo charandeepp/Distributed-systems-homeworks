@@ -18,24 +18,8 @@ import java.util.logging.Logger;
  * name: <Ravali Kandur>, <Charandeep Parisineti>
  * student id: <5084769>, <5103173>
  * x500 id: <id1>, <id2 (optional)>
- * TODO: need to change these machines later
  * CSELABS machine: <kh1262-08.cselabs.umn.edu, kh1262-09.cselabs.umn.edu, 
  * 					kh1262-10.cselabs.umn.edu, kh1262-11.cselabs.umn.edu>
- */
-
-/**
- * TODO:
- * Need to check if implementation logic for handling HALT messages and killing
- * everyone gracefully is done correctly
- * 
- * Barely added synchronization logic.
- * Need to add locking mechanism etc for multi-threaded environment
- * 
- * we need to calculate the avergar performance time for all requests.
- * Should add this logic, for now just printing the values for just HALT request
- * 
- * Need to check the logging part
- * 
  */
 
 /**
@@ -53,7 +37,6 @@ public class BankServer {
 	// store which maintains all the accounts for this bank
 	private static Hashtable<Integer, Account> accountsStore_ =  new Hashtable<Integer, Account>();
  
-	// TODO: should check lamport clock behavior i.e. incrementing for all the events [especially internal events]
 	public LamportClock clock_ = new LamportClock();
 	
 	// map of peer server host and port on which this server can communicate
@@ -82,7 +65,6 @@ public class BankServer {
 	public static int clientReqPort_;
 	
 	// lock variable to maintain the local queue in state machine model
-	// TODO: need to work on synchronization part. use this when handling sync logic
 	public Integer reqLock_ = 1;
 
     public Integer clientDSLock_ = 2;
@@ -116,8 +98,6 @@ public class BankServer {
 		logger_.info("Initialized all accounts, Ready to receive client requests ...");
 	}
 
-	// TODO: should call this when we know that there are no other messages from
-	// the other servers
 	void execute() {
 	
 		synchronized (reqLock_) {
@@ -148,21 +128,16 @@ public class BankServer {
 			
 			if(r.getRequest() instanceof HaltRequestB) {
 				// we should exit when we encounter a HALT request
-				// TODO: I am not sure if this is the right way to do it. check if
-				// we can do it in a better way
 				System.exit(0);
 			}
 		}
 	}
 	
 	// this is to make sure that we have received all the acknowledgements.
-	// TODO: this will anyways happen. But what if we miss some acknowledgement?
-	// shouldn't we check other server Requests that have a higher timestamp?
 	private boolean okToProceed(ServerRequest req) {
-
         synchronized (ackLock) {
 	       	if(ackSet.containsKey(req.getTimeStamp())) {
-		            if (ackSet.get(req.getTimeStamp()).size() == 3) {
+		            if (ackSet.get(req.getTimeStamp()).size() == numberOfServers_) {
 		                return true;
 		            }
 	        	}
@@ -219,7 +194,6 @@ public class BankServer {
 	 * method which is used to execute a request which is on the head of the queue
 	 */
 	private ResponseObject serveRequest(IRequest req) {
-		//TODO: worst way of doing this. try if you can change it later??
 		ResponseObject response = new ResponseObject(Boolean.FALSE, "INVALID REQUEST");
 		if(req instanceof NewAccountRequestB) {
 			response = serveNewAccountRequest(req);
@@ -239,7 +213,6 @@ public class BankServer {
 	
 	private ResponseObject serveHaltRequest(IRequest req) {
 		RequestResponse response = (RequestResponse) req.execute();
-		// TODO Auto-generated method stub
 		logger_.info(RequestType.halt.name() + " -> " + response.getResponse());
 
 		//print all account balances
@@ -315,7 +288,6 @@ public class BankServer {
 		if(response.getStatus()) {
 			updateStore((Account)response.getResult());
 		}
-		//TODO: should we need this logging? we should change the log formatter too !!!!
 		logger_.info(RequestType.newaccount.name() + " -> " + response.getResponse());
 		return new ResponseObject(response.getStatus(), response.getResponse());
 	}
@@ -356,9 +328,6 @@ public class BankServer {
 			}
 		}
 		if(sreq != null) {
-			// TODO: we are passing bankServer instance too much which might
-			// lead to synchronization problems, check how to avoid this?
-
 			// this is to broadcast the request received by this server to all
 			// the other servers in the pool.
 			new ServerBroadcasterThread(peerServers_, sreq, bankServer).run();
@@ -384,7 +353,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), breq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.balance.name()
 				+ " <" + bro.accountID() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -399,7 +368,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), treq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.transfer.name()
 				+ " <" + tro.sourceID() + ", " + tro.destinationID() + ", "
 				+ tro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
@@ -413,7 +382,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), wreq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.withdraw.name()
 				+ " <" + wro.accountID() + ", " + wro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -426,7 +395,7 @@ public class BankServer {
 		ServerRequest sreq = new ServerRequest(processId_, clock_.updateAndGetClockValue(), dreq);
 		logger_.info(processId_ + " " + "CLNT-REQ" + " "
 				+ System.currentTimeMillis() + " <" + sreq.getClockValue()
-				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.newaccount.name()
+				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.deposit.name()
 				+ " <" + dro.accountID() + ", " + dro.amount() + ">");
 		addClientRequest(sreq, clientSocket);
 		return sreq;
@@ -452,7 +421,6 @@ public class BankServer {
             throw new RuntimeException("Enter the process id!");
         }
 
-		//TODO: assuming id will be the 0th argument
 		BankServer bankServer = new BankServer(Integer.parseInt(args[0]));
 		ClientRequestHandlingThread t1 = new ClientRequestHandlingThread(clientReqPort_, bankServer);
 		ServerRequestHandlingThread t2 = new ServerRequestHandlingThread(serverReqPort_, bankServer);
