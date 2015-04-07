@@ -72,7 +72,6 @@ public class BankServer {
     
     public int numberOfServers_ = 0;
     
-	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_;
 	
 	long performanceTime_ = 0;
@@ -130,7 +129,7 @@ public class BankServer {
 			}
 			ServerRequest r = requests_.poll();
 			ResponseObject resp = serveRequest(r.getRequest());
-			performanceTime_ += System.currentTimeMillis()/1000;
+			performanceTime_ += System.currentTimeMillis();
 			logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
 			// if it is a direct request, we also need to send a response back to the client
 			synchronized (clientDSLock_) {
@@ -193,8 +192,8 @@ public class BankServer {
                         hostName_ = toks[0].trim();
 					} else {
 						peerServers_.put(toks[0].trim(), Integer.parseInt(toks[3].trim()));
-						numberOfServers_++;
 					}
+					numberOfServers_++;
 				}
 			}
 			bufferedReader.close();
@@ -259,11 +258,11 @@ public class BankServer {
 		}
 		
 		// print performance data
-		performanceTime_ += System.currentTimeMillis()/1000;
+		performanceTime_ += System.currentTimeMillis();
 		logger_.info("Performance Measurement Data ... ");
 		Long timeTaken = performanceTime_/(numberOfServers_*100+1);
 		logger_.info("Time taken to process the request when number of servers = { "
-				+ peerServers_.size()+1 + " } is " + timeTaken.toString());
+				+ numberOfServers_ + " } is " + timeTaken.toString() + " milliseconds");
 		
 		// closing log files
 		ServerLogger.closeLogFile();
