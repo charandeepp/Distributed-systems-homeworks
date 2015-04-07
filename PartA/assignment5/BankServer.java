@@ -81,8 +81,9 @@ public class BankServer {
 		}
 	});
 	
-	public BankServer(int procId) {
+	public BankServer(int procId, String config) {
         processId_ = procId;
+        CONFIG_FILE_PATH = config;
         logger_ = ServerLogger.logger(processId_);
         init();
         loadFromConfig();
@@ -222,7 +223,7 @@ public class BankServer {
 			logger_.info("Account { " + a + " } has balance = { " + accountsStore_.get(a).getBalance() + " }");
 			cumBal += accountsStore_.get(a).getBalance();
 		}
-		System.out.println("Cumulative Balance = " + cumBal);
+		logger_.info("Cumulative Balance = " + cumBal);
 		
 		// print all pending requests
 		logger_.info("Pending Requests ... ");
@@ -417,11 +418,11 @@ public class BankServer {
 	
 	public static void main(String[] args) {
 
-		if(args.length!=1){
-            throw new RuntimeException("Enter the process id!");
+		if(args.length!=2){
+            throw new RuntimeException("Enter the process id and config file name!");
         }
 
-		BankServer bankServer = new BankServer(Integer.parseInt(args[0]));
+		BankServer bankServer = new BankServer(Integer.parseInt(args[0]), args[1].trim());
 		ClientRequestHandlingThread t1 = new ClientRequestHandlingThread(clientReqPort_, bankServer);
 		ServerRequestHandlingThread t2 = new ServerRequestHandlingThread(serverReqPort_, bankServer);
 		ServerJobExecuterThread t3 = new ServerJobExecuterThread(bankServer);
