@@ -61,6 +61,9 @@ public class ClientRequestHandlingThread extends Thread {
 				        System.out.println("Read object " + reqObj.reqType());
 				        //add this request to the local queue to execute them as per StateMachineModel rules.
 				        this.mBankServer.addNewRequest(reqObj, this.mSocket, this.mBankServer);
+				        if(reqObj instanceof HaltRequestObject) {
+				        	break;
+				        }
 				    }
 				    catch(Exception e){
 				        e.printStackTrace();
@@ -68,6 +71,12 @@ public class ClientRequestHandlingThread extends Thread {
 				}
 			} catch (IOException e1) {
 				e1.printStackTrace();
+			} 
+			finally {
+				try {
+					mSocket.close();
+				} catch (IOException e) {
+				}
 			}
         }
     }

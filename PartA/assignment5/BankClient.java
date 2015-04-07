@@ -86,21 +86,14 @@ public class BankClient {
 		//send HALT messsage to server with processID = 0
 		try {
             HashMap<String, Integer> hp = serverIdVsHostPort_.get(0);
-            for(Integer i : serverIdVsHostPort_.keySet()) {
-            	System.out.println("i" + i);
-            	for(String s : serverIdVsHostPort_.get(i).keySet()) {
-            		System.out.println(s);
-            	}
-            	System.out.println("");
-            }
 			Socket socket = new Socket(hp.entrySet().iterator().next().getKey(), hp.entrySet().iterator().next().getValue());
 			ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
-			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 			
 			HaltRequestObject reqObject = new HaltRequestObject();
 			logger_.info("0" + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.halt.name());
 			outs.writeObject(reqObject);
 			
+			ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 			ResponseObject reqResponse = (ResponseObject) ins.readObject();
 			logger_.info("0" + " " + " RSP " + System.currentTimeMillis() + " " + reqResponse.getResponse());
 			
