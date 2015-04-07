@@ -47,6 +47,8 @@ import java.util.logging.Logger;
 public class BankServer {
 	
 	private static String CONFIG_FILE_PATH = "server.cfg";
+	
+	private ObjectOutputStream clientouts = null;
 
 	// store which maintains all the accounts for this bank
 	private static Hashtable<Integer, Account> accountsStore_ =  new Hashtable<Integer, Account>();
@@ -129,7 +131,10 @@ public class BankServer {
 				if(directRequestVsConnection_.containsKey(r)) {
 					try {
 						Socket cs = directRequestVsConnection_.remove(r);
-						new ObjectOutputStream(cs.getOutputStream()).writeObject(resp);
+						if(clientouts == null){
+							clientouts = new ObjectOutputStream(cs.getOutputStream());
+						}
+						clientouts.writeObject(resp);
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
