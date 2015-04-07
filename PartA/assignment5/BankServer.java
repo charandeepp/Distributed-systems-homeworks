@@ -73,7 +73,7 @@ public class BankServer {
     public int numberOfServers_ = 0;
     
 	//TODO: need to refactor logging as per the HW requirements
-	Logger logger_ = ServerLogger.logger();
+	Logger logger_;
 	
 	long cumStartTime_ = 0;
 	long cumEndTime_ = 0;
@@ -103,6 +103,7 @@ public class BankServer {
 	
 	public BankServer(int procId) {
         processId_ = procId;
+        logger_ = ServerLogger.logger(processId_);
         init();
         loadFromConfig();
 	}

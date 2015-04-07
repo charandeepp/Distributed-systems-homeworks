@@ -22,6 +22,10 @@ public class ServerLogger {
 	}
 	
 	public static Logger logger() {
+		return logger_;
+	}
+	
+	public static Logger logger(int pId) {
 	
 		/**
 		 * Configure the logger used for logging server information
@@ -30,7 +34,7 @@ public class ServerLogger {
 			
 			logger_ = Logger.getLogger(ServerLogger.class.getSimpleName());
 		    try {
-		        fh_ = new FileHandler(FILE_NAME);
+		        fh_ = new FileHandler(new StringBuilder().append(FILE_NAME).append(pId).toString());
 		        logger_.addHandler(fh_);
 		        SimpleFormatter formatter = new SimpleFormatter();
 		        fh_.setFormatter(formatter);
