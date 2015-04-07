@@ -1,0 +1,2004 @@
+Apr 07, 2015 1:38:17 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388697973 transfer {amount:10,sourceID:1,destinationID:5}
+Apr 07, 2015 1:38:17 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388697973 transfer {amount:10,sourceID:9,destinationID:6}
+Apr 07, 2015 1:38:17 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388697973 transfer {amount:10,sourceID:8,destinationID:2}
+Apr 07, 2015 1:38:17 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388697973 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:17 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388697973 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388698296 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388698298 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388698366 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388698367 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388698491 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388698492 transfer {amount:10,sourceID:1,destinationID:4}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388698554 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388698556 transfer {amount:10,sourceID:3,destinationID:5}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388698633 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388698636 transfer {amount:10,sourceID:9,destinationID:4}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388698753 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388698754 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388698785 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388698786 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388698817 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388698819 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388698906 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388698907 transfer {amount:10,sourceID:6,destinationID:7}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388698929 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388698931 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388698941 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388698942 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388698957 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388698958 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388698969 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388698970 transfer {amount:10,sourceID:9,destinationID:10}
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388698977 OK
+Apr 07, 2015 1:38:18 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388698978 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699085 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699086 transfer {amount:10,sourceID:1,destinationID:10}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699121 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699122 transfer {amount:10,sourceID:5,destinationID:10}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388699137 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388699138 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699209 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699210 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388699261 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388699262 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699265 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699266 transfer {amount:10,sourceID:2,destinationID:2}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699281 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699282 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699309 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699310 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388699321 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388699322 transfer {amount:10,sourceID:6,destinationID:5}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388699373 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388699374 transfer {amount:10,sourceID:2,destinationID:8}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699397 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699398 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699405 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699406 transfer {amount:10,sourceID:7,destinationID:7}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388699545 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388699546 transfer {amount:10,sourceID:2,destinationID:1}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699553 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699554 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699613 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699614 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388699633 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388699634 transfer {amount:10,sourceID:3,destinationID:10}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699669 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699670 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699701 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699702 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388699705 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388699706 transfer {amount:10,sourceID:8,destinationID:7}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699733 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699734 transfer {amount:10,sourceID:4,destinationID:5}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388699789 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388699790 transfer {amount:10,sourceID:10,destinationID:2}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699857 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699858 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699865 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699866 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699897 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699898 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388699925 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388699926 transfer {amount:10,sourceID:7,destinationID:4}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388699937 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388699938 transfer {amount:10,sourceID:8,destinationID:4}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388699945 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388699946 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388699957 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388699958 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388699969 OK
+Apr 07, 2015 1:38:19 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388699970 transfer {amount:10,sourceID:5,destinationID:6}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700009 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700010 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388700061 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388700062 transfer {amount:10,sourceID:10,destinationID:5}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388700081 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388700082 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388700085 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388700086 transfer {amount:10,sourceID:10,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388700377 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388700378 transfer {amount:10,sourceID:2,destinationID:10}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700389 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700390 transfer {amount:10,sourceID:5,destinationID:10}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388700409 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388700410 transfer {amount:10,sourceID:3,destinationID:7}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388700437 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388700438 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388700457 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388700458 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700509 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700510 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388700525 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388700526 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388700549 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388700550 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388700553 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388700554 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388700565 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388700566 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700581 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700582 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388700605 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388700606 transfer {amount:10,sourceID:2,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388700637 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388700638 transfer {amount:10,sourceID:9,destinationID:6}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388700809 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388700810 transfer {amount:10,sourceID:7,destinationID:3}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388700841 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388700842 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388700853 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388700854 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700861 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700862 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388700873 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388700874 transfer {amount:10,sourceID:1,destinationID:9}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388700909 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388700910 transfer {amount:10,sourceID:10,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388700957 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388700958 transfer {amount:10,sourceID:6,destinationID:8}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388700981 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388700982 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388700997 OK
+Apr 07, 2015 1:38:20 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388700998 transfer {amount:10,sourceID:9,destinationID:6}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388701005 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388701006 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388701014 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388701015 transfer {amount:10,sourceID:7,destinationID:4}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388701417 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388701418 transfer {amount:10,sourceID:10,destinationID:2}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388701453 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388701454 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388701473 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388701474 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388701541 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388701542 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388701581 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388701582 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388701669 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388701670 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388701737 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388701738 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388701745 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388701746 transfer {amount:10,sourceID:10,destinationID:7}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388701749 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388701750 transfer {amount:10,sourceID:7,destinationID:2}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388701763 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388701764 transfer {amount:10,sourceID:6,destinationID:1}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388701857 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388701858 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388701889 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388701890 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388701949 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388701950 transfer {amount:10,sourceID:10,destinationID:7}
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388701989 OK
+Apr 07, 2015 1:38:21 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388701990 transfer {amount:10,sourceID:4,destinationID:4}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388702017 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388702018 transfer {amount:10,sourceID:9,destinationID:10}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388702049 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388702050 transfer {amount:10,sourceID:9,destinationID:7}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388702061 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388702062 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388702065 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388702066 transfer {amount:10,sourceID:1,destinationID:10}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388702081 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388702082 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388702249 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388702250 transfer {amount:10,sourceID:3,destinationID:6}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388702321 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388702322 transfer {amount:10,sourceID:7,destinationID:3}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388702369 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388702370 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388702405 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388702406 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388702429 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388702430 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388702437 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388702438 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388702449 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388702450 transfer {amount:10,sourceID:2,destinationID:5}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388702661 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388702662 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388702693 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388702694 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388702693 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388702695 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388702697 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388702698 transfer {amount:10,sourceID:9,destinationID:1}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388702705 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388702706 transfer {amount:10,sourceID:9,destinationID:1}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388702721 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388702722 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388702909 OK
+Apr 07, 2015 1:38:22 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388702910 transfer {amount:10,sourceID:5,destinationID:5}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703145 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703146 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388703177 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388703178 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388703185 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388703186 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388703193 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388703194 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388703201 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388703202 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703205 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703206 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388703233 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388703238 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388703289 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388703290 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388703297 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388703298 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388703313 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703313 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388703314 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703314 transfer {amount:10,sourceID:7,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388703329 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388703330 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388703425 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388703426 transfer {amount:10,sourceID:8,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388703517 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388703518 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388703625 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388703625 transfer {amount:10,sourceID:4,destinationID:2}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703693 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703693 transfer {amount:10,sourceID:2,destinationID:5}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388703773 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388703773 transfer {amount:10,sourceID:2,destinationID:1}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388703789 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388703789 transfer {amount:10,sourceID:2,destinationID:3}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388703805 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388703806 transfer {amount:10,sourceID:9,destinationID:4}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388703809 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703809 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388703809 transfer {amount:10,sourceID:6,destinationID:7}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703810 transfer {amount:10,sourceID:6,destinationID:7}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388703821 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388703821 transfer {amount:10,sourceID:2,destinationID:8}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388703893 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388703893 transfer {amount:10,sourceID:6,destinationID:1}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388703917 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388703917 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388703949 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388703949 transfer {amount:10,sourceID:1,destinationID:8}
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388703953 OK
+Apr 07, 2015 1:38:23 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388703953 transfer {amount:10,sourceID:7,destinationID:7}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704045 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704045 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704137 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704137 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704153 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704153 transfer {amount:10,sourceID:1,destinationID:10}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704169 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704169 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704169 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704170 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704173 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704173 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704197 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704197 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704205 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704205 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704269 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704269 transfer {amount:10,sourceID:8,destinationID:5}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704273 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704273 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704273 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704274 transfer {amount:10,sourceID:3,destinationID:3}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704289 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704289 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704301 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704301 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704329 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704329 transfer {amount:10,sourceID:2,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704353 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704353 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704353 transfer {amount:10,sourceID:7,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704354 transfer {amount:10,sourceID:2,destinationID:9}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704389 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704389 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704397 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704397 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704441 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704441 transfer {amount:10,sourceID:8,destinationID:9}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704453 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704453 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704453 transfer {amount:10,sourceID:2,destinationID:5}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704454 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704481 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704481 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704489 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704489 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704541 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704541 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704542 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704541 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704549 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704549 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704597 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704597 transfer {amount:10,sourceID:3,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704605 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704605 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704625 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704625 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704625 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704626 transfer {amount:10,sourceID:7,destinationID:1}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704653 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704653 transfer {amount:10,sourceID:8,destinationID:2}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704677 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704677 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704733 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704733 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704773 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704773 transfer {amount:10,sourceID:7,destinationID:2}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704833 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704834 transfer {amount:10,sourceID:7,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704837 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704837 transfer {amount:10,sourceID:1,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704861 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704861 transfer {amount:10,sourceID:7,destinationID:7}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704869 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704869 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388704885 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388704885 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388704921 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388704921 transfer {amount:10,sourceID:5,destinationID:8}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388704969 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388704969 transfer {amount:10,sourceID:3,destinationID:6}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388704989 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388704989 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388704997 OK
+Apr 07, 2015 1:38:24 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388704997 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705013 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705013 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705029 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705029 transfer {amount:10,sourceID:5,destinationID:8}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705029 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705030 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705033 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705037 transfer {amount:10,sourceID:2,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705085 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705085 transfer {amount:10,sourceID:4,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705089 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705089 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705093 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705093 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705121 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705121 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705129 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705129 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705157 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705157 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705173 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705173 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705181 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705181 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705209 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705209 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705225 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705225 transfer {amount:10,sourceID:7,destinationID:6}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705245 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705245 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705269 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705269 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705269 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705270 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705305 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705305 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705321 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705321 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705333 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705333 transfer {amount:10,sourceID:4,destinationID:7}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705357 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705357 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705381 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705381 transfer {amount:10,sourceID:5,destinationID:6}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705393 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705393 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705413 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705413 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705421 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705421 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705453 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705453 transfer {amount:10,sourceID:1,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705469 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705469 transfer {amount:10,sourceID:2,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705489 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705489 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705513 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705513 transfer {amount:10,sourceID:6,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705521 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705521 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705541 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705541 transfer {amount:10,sourceID:10,destinationID:2}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705558 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705558 transfer {amount:10,sourceID:3,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705581 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705581 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705601 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705601 transfer {amount:10,sourceID:9,destinationID:7}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705617 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705617 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705625 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705625 transfer {amount:10,sourceID:6,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705645 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705645 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705665 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705665 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705689 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705690 transfer {amount:10,sourceID:3,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705705 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705705 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705709 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705709 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705737 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705737 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705749 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705749 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388705781 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388705782 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388705789 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388705790 transfer {amount:10,sourceID:8,destinationID:10}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388705805 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388705805 transfer {amount:10,sourceID:5,destinationID:6}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388705825 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388705825 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388705901 OK
+Apr 07, 2015 1:38:25 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388705901 transfer {amount:10,sourceID:2,destinationID:3}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706017 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706017 transfer {amount:10,sourceID:5,destinationID:10}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706161 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706161 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706217 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706217 transfer {amount:10,sourceID:10,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706249 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706249 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706261 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706261 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706313 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706313 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706333 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706333 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706373 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706374 transfer {amount:10,sourceID:7,destinationID:3}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706425 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706425 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706489 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706489 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706525 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706525 transfer {amount:10,sourceID:9,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706549 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706549 transfer {amount:10,sourceID:8,destinationID:9}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706553 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706554 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706557 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706557 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706561 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706561 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706585 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706585 transfer {amount:10,sourceID:7,destinationID:8}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706613 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706613 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706625 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706625 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706629 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706629 transfer {amount:10,sourceID:2,destinationID:3}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706649 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706649 transfer {amount:10,sourceID:5,destinationID:8}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706669 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706669 transfer {amount:10,sourceID:7,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706701 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706701 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706729 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706729 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706733 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706733 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706741 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706741 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706757 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706757 transfer {amount:10,sourceID:3,destinationID:3}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706789 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706789 transfer {amount:10,sourceID:5,destinationID:6}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706821 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706821 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706837 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706837 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388706853 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388706853 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388706861 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388706861 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388706885 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388706885 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388706909 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388706909 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388706929 OK
+Apr 07, 2015 1:38:26 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388706929 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707149 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707149 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388707261 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388707261 transfer {amount:10,sourceID:1,destinationID:5}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388707329 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388707329 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388707337 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388707337 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388707345 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388707345 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388707349 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388707349 transfer {amount:10,sourceID:9,destinationID:10}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707353 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707353 transfer {amount:10,sourceID:7,destinationID:1}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388707449 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388707449 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388707473 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388707473 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388707477 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388707477 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388707489 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707489 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388707489 transfer {amount:10,sourceID:10,destinationID:2}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707489 transfer {amount:10,sourceID:4,destinationID:9}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388707501 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388707501 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388707581 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388707581 transfer {amount:10,sourceID:8,destinationID:5}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388707633 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388707633 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707657 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707657 transfer {amount:10,sourceID:6,destinationID:3}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388707741 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388707741 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388707765 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388707765 transfer {amount:10,sourceID:4,destinationID:9}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388707781 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388707781 transfer {amount:10,sourceID:2,destinationID:9}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388707853 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388707853 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707861 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707861 transfer {amount:10,sourceID:3,destinationID:4}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388707869 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388707869 transfer {amount:10,sourceID:1,destinationID:4}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388707873 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388707873 transfer {amount:10,sourceID:2,destinationID:8}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388707881 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388707881 transfer {amount:10,sourceID:8,destinationID:9}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388707909 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388707909 transfer {amount:10,sourceID:5,destinationID:9}
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388707929 OK
+Apr 07, 2015 1:38:27 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388707929 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708001 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708001 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708085 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708085 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708145 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708145 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708173 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708173 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708209 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708209 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708353 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708353 transfer {amount:10,sourceID:2,destinationID:8}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708405 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708405 transfer {amount:10,sourceID:5,destinationID:6}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708461 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708461 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708469 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708469 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708489 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708489 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708497 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708497 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708497 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708498 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708509 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708509 transfer {amount:10,sourceID:2,destinationID:5}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708545 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708545 transfer {amount:10,sourceID:6,destinationID:9}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708573 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708573 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708573 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708573 transfer {amount:10,sourceID:3,destinationID:5}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708577 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708577 transfer {amount:10,sourceID:2,destinationID:3}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708601 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708601 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708621 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708621 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708629 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708629 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708641 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708641 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708665 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708665 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708693 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708693 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708709 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708709 transfer {amount:10,sourceID:4,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708721 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708721 transfer {amount:10,sourceID:10,destinationID:7}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708733 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708733 transfer {amount:10,sourceID:4,destinationID:8}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708757 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708757 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708777 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708782 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708797 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708797 transfer {amount:10,sourceID:10,destinationID:7}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708809 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708809 transfer {amount:10,sourceID:1,destinationID:5}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708837 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708837 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708853 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708853 transfer {amount:10,sourceID:3,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708869 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708869 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708885 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708885 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708905 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708905 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388708921 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388708921 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388708945 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388708945 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388708957 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388708957 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388708973 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388708973 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388708993 OK
+Apr 07, 2015 1:38:28 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388708993 transfer {amount:10,sourceID:6,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709009 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709009 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709037 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709037 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709045 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709045 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709061 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709061 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709089 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709089 transfer {amount:10,sourceID:5,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709097 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709098 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709125 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709125 transfer {amount:10,sourceID:10,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709137 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709137 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709153 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709153 transfer {amount:10,sourceID:3,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709173 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709173 transfer {amount:10,sourceID:8,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709189 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709189 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709213 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709213 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709233 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709233 transfer {amount:10,sourceID:10,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709245 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709245 transfer {amount:10,sourceID:3,destinationID:10}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709261 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709261 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709281 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709281 transfer {amount:10,sourceID:2,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709301 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709301 transfer {amount:10,sourceID:8,destinationID:4}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709329 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709329 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709341 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709341 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709345 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709345 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709365 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709365 transfer {amount:10,sourceID:10,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709393 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709393 transfer {amount:10,sourceID:7,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709425 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709425 transfer {amount:10,sourceID:4,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709445 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709445 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709453 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709453 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709461 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709461 transfer {amount:10,sourceID:7,destinationID:1}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709481 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709481 transfer {amount:10,sourceID:8,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709513 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709513 transfer {amount:10,sourceID:3,destinationID:6}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709533 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709533 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709545 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709545 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709557 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709557 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709565 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709565 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709605 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709605 transfer {amount:10,sourceID:5,destinationID:8}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709617 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709618 transfer {amount:10,sourceID:1,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709693 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709693 transfer {amount:10,sourceID:6,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709725 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709725 transfer {amount:10,sourceID:7,destinationID:1}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709757 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709757 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709773 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709773 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709849 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709849 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709861 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709861 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709869 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709869 transfer {amount:10,sourceID:8,destinationID:10}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709877 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709877 transfer {amount:10,sourceID:10,destinationID:1}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709877 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709877 transfer {amount:10,sourceID:9,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709901 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709901 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709909 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709909 transfer {amount:10,sourceID:1,destinationID:10}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388709929 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388709929 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388709929 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388709929 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388709941 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388709941 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388709985 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388709985 transfer {amount:10,sourceID:4,destinationID:7}
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388709997 OK
+Apr 07, 2015 1:38:29 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388709997 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710025 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710025 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710025 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710025 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710037 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710037 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710073 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710073 transfer {amount:10,sourceID:3,destinationID:1}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710085 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710085 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710113 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710113 transfer {amount:10,sourceID:1,destinationID:7}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710117 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710117 transfer {amount:10,sourceID:2,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710137 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710137 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710165 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710165 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710177 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710177 transfer {amount:10,sourceID:5,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710201 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710201 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710213 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710213 transfer {amount:10,sourceID:4,destinationID:6}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710229 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710229 transfer {amount:10,sourceID:2,destinationID:7}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710257 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710257 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710289 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710289 transfer {amount:10,sourceID:6,destinationID:5}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710317 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710317 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710329 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710329 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710333 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710333 transfer {amount:10,sourceID:4,destinationID:1}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710349 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710349 transfer {amount:10,sourceID:3,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710381 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710381 transfer {amount:10,sourceID:3,destinationID:6}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710413 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710413 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710429 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710429 transfer {amount:10,sourceID:5,destinationID:7}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710437 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710437 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710453 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710453 transfer {amount:10,sourceID:8,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710469 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710469 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710509 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710509 transfer {amount:10,sourceID:3,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710521 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710521 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710529 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710529 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710545 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710545 transfer {amount:10,sourceID:6,destinationID:1}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710557 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710557 transfer {amount:10,sourceID:5,destinationID:2}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710597 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710597 transfer {amount:10,sourceID:8,destinationID:5}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710605 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710605 transfer {amount:10,sourceID:4,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710621 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710621 transfer {amount:10,sourceID:8,destinationID:2}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710641 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710641 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710641 transfer {amount:10,sourceID:3,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710641 transfer {amount:10,sourceID:9,destinationID:7}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710681 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710681 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710693 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710693 transfer {amount:10,sourceID:6,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710717 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710717 transfer {amount:10,sourceID:10,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710753 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710753 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710753 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710753 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710769 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710769 transfer {amount:10,sourceID:2,destinationID:2}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710777 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710777 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710813 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710813 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710853 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710853 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710853 transfer {amount:10,sourceID:2,destinationID:9}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710853 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710857 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710857 transfer {amount:10,sourceID:1,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710889 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710889 transfer {amount:10,sourceID:8,destinationID:8}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388710913 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388710913 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388710945 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388710945 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388710969 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388710969 transfer {amount:10,sourceID:7,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388710985 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388710985 OK
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388710985 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:30 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388710985 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711001 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711001 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711073 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711073 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711077 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711077 transfer {amount:10,sourceID:5,destinationID:5}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711089 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711089 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711101 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711101 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711101 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711101 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711125 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711125 transfer {amount:10,sourceID:8,destinationID:2}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711129 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711129 transfer {amount:10,sourceID:7,destinationID:9}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711145 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711145 transfer {amount:10,sourceID:6,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711193 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711193 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711197 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711197 transfer {amount:10,sourceID:8,destinationID:10}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711217 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711217 transfer {amount:10,sourceID:9,destinationID:2}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711221 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711221 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711237 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711237 transfer {amount:10,sourceID:8,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711289 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711289 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711289 transfer {amount:10,sourceID:8,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711289 transfer {amount:10,sourceID:6,destinationID:7}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711301 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711301 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711313 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711313 transfer {amount:10,sourceID:9,destinationID:10}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711329 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711329 transfer {amount:10,sourceID:5,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711433 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711433 transfer {amount:10,sourceID:7,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711489 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711489 transfer {amount:10,sourceID:2,destinationID:7}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711493 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711493 transfer {amount:10,sourceID:8,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711577 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711577 transfer {amount:10,sourceID:3,destinationID:9}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711597 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711597 transfer {amount:10,sourceID:7,destinationID:7}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711609 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711609 transfer {amount:10,sourceID:7,destinationID:5}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711609 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711609 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711609 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711610 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711629 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711629 transfer {amount:10,sourceID:1,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711641 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711641 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711685 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711685 transfer {amount:10,sourceID:8,destinationID:9}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711689 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711689 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711693 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711693 transfer {amount:10,sourceID:6,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711713 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711713 transfer {amount:10,sourceID:6,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711729 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711729 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711753 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711753 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711757 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711757 transfer {amount:10,sourceID:8,destinationID:6}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711773 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711773 transfer {amount:10,sourceID:2,destinationID:6}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711809 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711809 transfer {amount:10,sourceID:7,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711817 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711817 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711837 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711837 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711849 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711849 transfer {amount:10,sourceID:2,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711857 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711857 transfer {amount:10,sourceID:5,destinationID:4}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711897 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711897 transfer {amount:10,sourceID:10,destinationID:1}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711909 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711909 transfer {amount:10,sourceID:8,destinationID:5}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388711925 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388711925 transfer {amount:10,sourceID:6,destinationID:8}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388711933 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388711933 transfer {amount:10,sourceID:9,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388711949 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 0  REQ 1428388711949 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388711985 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388711985 transfer {amount:10,sourceID:4,destinationID:3}
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388711993 OK
+Apr 07, 2015 1:38:31 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388711993 transfer {amount:10,sourceID:6,destinationID:2}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712009 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388712009 transfer {amount:10,sourceID:1,destinationID:1}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712045 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 0  RSP 1428388712045 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388712045 transfer {amount:10,sourceID:7,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712073 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712073 transfer {amount:10,sourceID:6,destinationID:6}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712081 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712081 transfer {amount:10,sourceID:9,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712093 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388712093 transfer {amount:10,sourceID:9,destinationID:8}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712129 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388712129 transfer {amount:10,sourceID:8,destinationID:2}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712157 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712157 transfer {amount:10,sourceID:10,destinationID:8}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712173 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712173 transfer {amount:10,sourceID:10,destinationID:3}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712181 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388712181 transfer {amount:10,sourceID:3,destinationID:8}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712217 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388712217 transfer {amount:10,sourceID:4,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712249 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712249 transfer {amount:10,sourceID:8,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712273 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712273 transfer {amount:10,sourceID:6,destinationID:5}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712289 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388712289 transfer {amount:10,sourceID:10,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712305 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388712305 transfer {amount:10,sourceID:6,destinationID:9}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712337 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712337 transfer {amount:10,sourceID:1,destinationID:10}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712357 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712357 transfer {amount:10,sourceID:6,destinationID:9}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712373 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  REQ 1428388712373 transfer {amount:10,sourceID:7,destinationID:7}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712393 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  REQ 1428388712393 transfer {amount:10,sourceID:8,destinationID:5}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712421 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712421 transfer {amount:10,sourceID:3,destinationID:4}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712445 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712445 transfer {amount:10,sourceID:1,destinationID:2}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 1  RSP 1428388712457 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 2  RSP 1428388712485 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712509 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  REQ 1428388712509 transfer {amount:10,sourceID:5,destinationID:9}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712533 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712533 transfer {amount:10,sourceID:5,destinationID:3}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 3  RSP 1428388712593 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712625 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  REQ 1428388712625 transfer {amount:10,sourceID:9,destinationID:9}
+Apr 07, 2015 1:38:32 AM assignment5.BankClientThread run
+INFO: 4  RSP 1428388712721 OK
+Apr 07, 2015 1:38:32 AM assignment5.BankClient main
+INFO: 0  REQ 1428388712723 halt
+Apr 07, 2015 1:38:32 AM assignment5.BankClient main
+INFO: 0  RSP 1428388712772 SUCCESS

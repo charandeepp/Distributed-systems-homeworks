@@ -1,0 +1,2038 @@
+Apr 07, 2015 1:33:55 AM assignment5.BankServer init
+INFO: Initialized all accounts, Ready to receive client requests ...
+Apr 07, 2015 1:34:11 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388451858 <1, 0> transfer <4, 6, 10>
+Apr 07, 2015 1:34:11 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388451897 <2, 0> transfer 4,6,10
+Apr 07, 2015 1:34:11 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388451899 <2, 2> transfer 9,8,10
+Apr 07, 2015 1:34:11 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388451915 <2, 1> transfer 7,9,10
+Apr 07, 2015 1:34:11 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:11 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388451964 2
+Apr 07, 2015 1:34:11 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388451973 <8, 0> transfer <5, 1, 10>
+Apr 07, 2015 1:34:11 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388451983 <10, 0> transfer 5,1,10
+Apr 07, 2015 1:34:11 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:11 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388451987 2
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452026 <14, 1> transfer 6,6,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452026 2
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452032 <14, 2> transfer 7,8,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452043 10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452060 14
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452079 14
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452092 <19, 0> transfer <6, 1, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452095 <20, 0> transfer 6,1,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452122 20
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452122 <24, 1> transfer 4,9,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452151 24
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452155 <27, 2> transfer 9,8,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452182 27
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452201 <30, 0> transfer <4, 10, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452203 <31, 0> transfer 4,10,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452216 31
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452219 <34, 2> transfer 1,2,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452231 34
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452234 <38, 1> transfer 10,10,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452243 38
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452297 <41, 0> transfer <3, 8, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452299 <42, 0> transfer 3,8,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452310 42
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452317 <46, 2> transfer 3,2,10
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452326 <48, 1> transfer 10,3,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452338 48
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452345 46
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452389 <51, 0> transfer <3, 3, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452391 <52, 0> transfer 3,3,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452402 52
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452424 <56, 1> transfer 4,4,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452431 <56, 2> transfer 7,6,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452432 56
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452435 56
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452481 <61, 0> transfer <5, 4, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452483 <62, 0> transfer 5,4,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452492 62
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452512 <66, 1> transfer 3,8,10
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452521 <69, 2> transfer 7,1,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452525 66
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452530 69
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452577 <72, 0> transfer <9, 2, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452579 <73, 0> transfer 9,2,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452585 73
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452606 <77, 1> transfer 10,5,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452611 77
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452618 <81, 2> transfer 6,7,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452623 81
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452665 <84, 0> transfer <2, 3, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452667 <85, 0> transfer 2,3,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452672 85
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452697 <89, 1> transfer 10,8,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452701 89
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452707 <93, 2> transfer 6,3,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452711 93
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452753 <96, 0> transfer <5, 8, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452755 <97, 0> transfer 5,8,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452760 97
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452783 <101, 1> transfer 3,2,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452787 101
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452792 <105, 2> transfer 7,2,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452801 105
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452845 <108, 0> transfer <10, 10, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452847 <109, 0> transfer 10,10,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452854 109
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452879 <113, 1> transfer 2,7,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452883 113
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452885 <116, 2> transfer 8,5,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452892 116
+Apr 07, 2015 1:34:12 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388452933 <119, 0> transfer <10, 10, 10>
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452936 <120, 0> transfer 10,10,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452942 120
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452974 <124, 1> transfer 2,7,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388452978 <127, 2> transfer 10,10,10
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452978 124
+Apr 07, 2015 1:34:12 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:12 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388452981 127
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453021 <130, 0> transfer <2, 2, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453022 <131, 0> transfer 2,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453028 131
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453060 <135, 1> transfer 6,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453078 <138, 2> transfer 6,1,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453078 135
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453081 138
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453105 <141, 0> transfer <4, 2, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453106 <142, 0> transfer 4,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453111 142
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453147 <146, 1> transfer 5,5,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453158 146
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453164 <150, 2> transfer 1,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453168 150
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453189 <153, 0> transfer <4, 2, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453190 <154, 0> transfer 4,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453199 154
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453236 <158, 1> transfer 7,6,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453240 158
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453252 <162, 2> transfer 10,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453256 162
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453277 <165, 0> transfer <10, 8, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453280 <166, 0> transfer 10,8,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453298 166
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453321 <170, 1> transfer 5,1,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453324 170
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453340 <174, 2> transfer 7,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453344 174
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453377 <177, 0> transfer <7, 1, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453378 <178, 0> transfer 7,1,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453384 178
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453403 <182, 1> transfer 8,5,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453407 182
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453427 <186, 2> transfer 2,7,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453431 186
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453461 <189, 0> transfer <10, 2, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453462 <190, 0> transfer 10,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453467 190
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453487 <194, 1> transfer 1,7,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453493 194
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453512 <198, 2> transfer 6,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453517 198
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453545 <201, 0> transfer <5, 6, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453546 <202, 0> transfer 5,6,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453551 202
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453572 <206, 1> transfer 3,6,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453581 206
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453600 <210, 2> transfer 7,5,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453614 210
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453629 <213, 0> transfer <9, 3, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453630 <214, 0> transfer 9,3,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453641 214
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453664 <218, 1> transfer 10,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453668 218
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453692 <222, 2> transfer 9,7,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453695 222
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453725 <225, 0> transfer <10, 8, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453726 <226, 0> transfer 10,8,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453731 226
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453755 <230, 1> transfer 7,4,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453758 230
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453775 <234, 2> transfer 3,6,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453779 234
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453809 <237, 0> transfer <10, 9, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453815 <238, 0> transfer 10,9,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453819 238
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453840 <242, 1> transfer 4,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453843 242
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453860 <246, 2> transfer 4,9,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453863 246
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453897 <249, 0> transfer <5, 2, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453898 <250, 0> transfer 5,2,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453902 250
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453926 <254, 1> transfer 4,3,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453928 254
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453954 <258, 2> transfer 1,10,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453963 258
+Apr 07, 2015 1:34:13 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388453985 <261, 0> transfer <10, 4, 10>
+Apr 07, 2015 1:34:13 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388453987 <262, 0> transfer 10,4,10
+Apr 07, 2015 1:34:13 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:13 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388453994 262
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454012 <266, 1> transfer 8,4,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454018 266
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454049 <270, 2> transfer 1,5,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454062 270
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454073 <273, 0> transfer <5, 8, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454078 <274, 0> transfer 5,8,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454083 274
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454100 <278, 1> transfer 9,6,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454109 278
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454150 <282, 2> transfer 5,9,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454154 282
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454161 <285, 0> transfer <3, 1, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454162 <286, 0> transfer 3,1,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454166 286
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454187 <290, 1> transfer 3,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454190 290
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454235 <294, 2> transfer 4,6,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454240 294
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454249 <297, 0> transfer <10, 3, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454250 <298, 0> transfer 10,3,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454254 298
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454275 <302, 1> transfer 7,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454278 302
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454323 <306, 2> transfer 2,5,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454327 306
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454333 <309, 0> transfer <10, 6, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454334 <310, 0> transfer 10,6,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454340 310
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454359 <314, 1> transfer 5,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454362 314
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454412 <318, 2> transfer 10,2,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454414 318
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454417 <321, 0> transfer <3, 7, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454418 <322, 0> transfer 3,7,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454422 322
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454442 <326, 1> transfer 3,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454447 326
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454496 <330, 2> transfer 2,1,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454498 330
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454501 <333, 0> transfer <5, 9, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454502 <334, 0> transfer 5,9,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454506 334
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454526 <338, 1> transfer 5,8,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454529 338
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454579 <342, 2> transfer 1,4,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454581 342
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454585 <345, 0> transfer <10, 10, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454587 <346, 0> transfer 10,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454590 346
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454610 <350, 1> transfer 10,9,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454617 350
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454667 <354, 2> transfer 7,7,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454669 <357, 0> transfer <8, 4, 10>
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454672 354
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454673 <358, 0> transfer 8,4,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454675 358
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454703 <362, 1> transfer 5,8,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454709 362
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454752 <366, 2> transfer 4,1,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454757 <369, 0> transfer <3, 6, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454761 <370, 0> transfer 3,6,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454763 366
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454769 370
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454786 <374, 1> transfer 1,8,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454795 374
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454843 <378, 2> transfer 4,5,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454848 378
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454849 <381, 0> transfer <6, 5, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454850 <382, 0> transfer 6,5,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454854 382
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454876 <386, 1> transfer 6,8,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454878 386
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454927 <390, 2> transfer 10,4,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454930 390
+Apr 07, 2015 1:34:14 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388454937 <393, 0> transfer <7, 5, 10>
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454938 <394, 0> transfer 7,5,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454941 394
+Apr 07, 2015 1:34:14 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388454962 <398, 1> transfer 9,10,10
+Apr 07, 2015 1:34:14 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:14 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388454966 398
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455011 <402, 2> transfer 8,2,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455014 402
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455021 <405, 0> transfer <5, 10, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455022 <406, 0> transfer 5,10,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455025 406
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455046 <410, 1> transfer 5,6,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455055 410
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455095 <414, 2> transfer 4,3,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455099 414
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455105 <417, 0> transfer <1, 7, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455106 <418, 0> transfer 1,7,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455109 418
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455131 <422, 1> transfer 8,10,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455134 422
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455183 <426, 2> transfer 5,8,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455191 426
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455193 <429, 0> transfer <8, 7, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455194 <430, 0> transfer 8,7,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455197 430
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455215 <434, 1> transfer 4,4,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455221 434
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455275 <438, 2> transfer 8,1,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455277 <437, 0> transfer <1, 10, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455280 <438, 0> transfer 1,10,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455288 438
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455291 438
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455307 <444, 1> transfer 7,1,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455319 444
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455369 <447, 0> transfer <3, 6, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455371 <448, 0> transfer 3,6,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455372 <448, 2> transfer 4,3,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455378 448
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455380 448
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455399 <454, 1> transfer 3,9,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455402 454
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455457 <457, 0> transfer <3, 9, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455460 <458, 0> transfer 3,9,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455461 <458, 2> transfer 4,9,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455463 458
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455465 458
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455482 <464, 1> transfer 3,10,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455486 464
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455541 <467, 0> transfer <10, 9, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455543 <468, 0> transfer 10,9,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455547 468
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455547 <472, 2> transfer 8,2,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455560 472
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455568 <476, 1> transfer 7,5,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455573 476
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455625 <479, 0> transfer <2, 7, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455626 <480, 0> transfer 2,7,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455650 <484, 2> transfer 8,4,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455654 480
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455655 484
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455658 <488, 1> transfer 1,6,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455661 488
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455733 <491, 0> transfer <8, 7, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455735 <492, 0> transfer 8,7,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455736 <492, 2> transfer 8,7,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455746 <498, 1> transfer 8,8,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455747 492
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455750 492
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455751 498
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455825 <501, 0> transfer <4, 4, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455826 <502, 0> transfer 4,4,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455832 <506, 1> transfer 2,2,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455832 502
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455834 <506, 2> transfer 2,4,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455838 506
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455843 506
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455909 <511, 0> transfer <5, 2, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455910 <512, 0> transfer 5,2,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455914 512
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455914 <516, 1> transfer 3,6,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455918 516
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455923 <520, 2> transfer 2,8,10
+Apr 07, 2015 1:34:15 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:15 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388455929 520
+Apr 07, 2015 1:34:15 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388455997 <523, 0> transfer <5, 1, 10>
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455998 <524, 0> transfer 5,1,10
+Apr 07, 2015 1:34:15 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388455999 <524, 1> transfer 5,8,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456002 524
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456003 524
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456006 <530, 2> transfer 6,1,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456010 530
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456083 <534, 1> transfer 7,6,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456085 <537, 0> transfer <5, 6, 10>
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456085 534
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456086 <538, 0> transfer 5,6,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456089 538
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456094 <542, 2> transfer 7,2,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456096 542
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456162 <546, 1> transfer 1,10,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456165 546
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456173 <549, 0> transfer <6, 9, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456174 <550, 0> transfer 6,9,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456175 <550, 2> transfer 6,3,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456181 550
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456183 550
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456247 <556, 1> transfer 7,6,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456249 556
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456261 <559, 0> transfer <5, 6, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456263 <560, 0> transfer 5,6,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456263 <560, 2> transfer 2,5,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456276 560
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456281 560
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456331 <566, 1> transfer 4,9,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456353 <569, 0> transfer <7, 8, 10>
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456353 566
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456355 <570, 0> transfer 7,8,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456359 <570, 2> transfer 4,6,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456382 570
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456384 570
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456431 <576, 1> transfer 1,8,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456437 576
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456461 <579, 0> transfer <5, 5, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456462 <580, 0> transfer 5,5,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456463 <580, 2> transfer 9,10,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456466 580
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456468 580
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456515 <586, 1> transfer 6,10,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456517 586
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456549 <589, 0> transfer <4, 4, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456550 <590, 0> transfer 4,4,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456551 <590, 2> transfer 3,1,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456558 590
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456562 590
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456599 <596, 1> transfer 3,9,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456603 596
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456641 <599, 0> transfer <8, 6, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456643 <600, 0> transfer 8,6,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456644 <600, 2> transfer 10,10,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456646 600
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456648 600
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456683 <606, 1> transfer 10,10,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456687 606
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456725 <609, 0> transfer <10, 7, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456727 <610, 0> transfer 10,7,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456729 <610, 2> transfer 10,4,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456730 610
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456731 610
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456767 <616, 1> transfer 6,2,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456770 616
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456809 <619, 0> transfer <1, 4, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456814 <620, 2> transfer 4,8,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456814 <620, 0> transfer 1,4,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456829 620
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456830 620
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456851 <626, 1> transfer 1,7,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456854 626
+Apr 07, 2015 1:34:16 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388456909 <629, 0> transfer <10, 9, 10>
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456911 <630, 2> transfer 5,10,10
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456911 <630, 0> transfer 10,9,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456925 630
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456926 630
+Apr 07, 2015 1:34:16 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388456934 <636, 1> transfer 9,3,10
+Apr 07, 2015 1:34:16 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:16 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388456936 636
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457005 <639, 0> transfer <1, 7, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457007 <640, 0> transfer 1,7,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457007 <640, 2> transfer 1,5,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457009 640
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457010 640
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457018 <646, 1> transfer 9,10,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457020 646
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457093 <649, 0> transfer <2, 3, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457094 <650, 0> transfer 2,3,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457095 <650, 2> transfer 3,9,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457099 650
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457101 650
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457107 <656, 1> transfer 7,6,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457109 656
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457181 <659, 0> transfer <5, 7, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457182 <660, 0> transfer 5,7,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457185 660
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457187 <664, 2> transfer 2,8,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457190 <668, 1> transfer 3,8,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457197 664
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457209 668
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457265 <673, 0> transfer <8, 7, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457266 <674, 0> transfer 8,7,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457270 674
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457284 <678, 2> transfer 6,3,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457289 <678, 1> transfer 2,9,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457304 678
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457304 678
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457349 <683, 0> transfer <5, 6, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457353 <684, 0> transfer 5,6,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457366 684
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457382 <688, 1> transfer 6,7,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457384 <688, 2> transfer 2,6,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457394 688
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457395 688
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457445 <693, 0> transfer <3, 3, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457446 <694, 0> transfer 3,3,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457448 694
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457474 <698, 1> transfer 1,5,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457476 <698, 2> transfer 2,3,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457479 698
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457480 698
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457525 <703, 0> transfer <9, 4, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457526 <704, 0> transfer 9,4,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457529 704
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457559 <708, 2> transfer 3,5,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457559 <708, 1> transfer 7,3,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457573 708
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457574 708
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457609 <713, 0> transfer <10, 2, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457611 <714, 0> transfer 10,2,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457616 714
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457650 <718, 1> transfer 9,4,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457650 <718, 2> transfer 1,4,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457655 718
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457656 718
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457693 <723, 0> transfer <7, 10, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457694 <724, 0> transfer 7,10,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457697 724
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457734 <728, 1> transfer 10,6,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457735 <728, 2> transfer 8,8,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457738 728
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457739 728
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457777 <733, 0> transfer <10, 5, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457778 <734, 0> transfer 10,5,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457780 734
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457820 <738, 2> transfer 9,4,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457820 <738, 1> transfer 9,5,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457830 738
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457830 738
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457861 <743, 0> transfer <9, 9, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457862 <744, 0> transfer 9,9,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457864 744
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457910 <748, 1> transfer 3,8,10
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457910 <748, 2> transfer 9,2,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457914 748
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457922 748
+Apr 07, 2015 1:34:17 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388457941 <753, 0> transfer <4, 5, 10>
+Apr 07, 2015 1:34:17 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388457942 <754, 0> transfer 4,5,10
+Apr 07, 2015 1:34:17 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:17 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388457944 754
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458003 <758, 1> transfer 3,6,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458003 <758, 2> transfer 10,4,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458007 758
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458007 758
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458025 <763, 0> transfer <3, 7, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458025 <764, 0> transfer 3,7,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458028 764
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458086 <768, 2> transfer 10,4,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458088 768
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458090 <772, 1> transfer 6,6,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458098 772
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458105 <775, 0> transfer <7, 2, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458106 <776, 0> transfer 7,2,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458109 776
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458166 <780, 2> transfer 1,5,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458170 780
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458174 <784, 1> transfer 2,10,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458176 784
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458189 <787, 0> transfer <7, 1, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458190 <788, 0> transfer 7,1,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458192 788
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458258 <792, 2> transfer 4,4,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458262 <796, 1> transfer 3,1,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458269 <799, 0> transfer <4, 6, 10>
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458271 792
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458271 <800, 0> transfer 4,6,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458288 796
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458290 800
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458366 <804, 1> transfer 3,6,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458367 <805, 2> transfer 8,1,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458369 <809, 0> transfer <5, 6, 10>
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458374 <810, 0> transfer 5,6,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458374 804
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458375 805
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458377 810
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458455 <814, 1> transfer 4,2,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458456 <814, 2> transfer 7,1,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458457 <817, 0> transfer <3, 10, 10>
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458459 <818, 0> transfer 3,10,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458459 814
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458462 814
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458465 818
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458542 <822, 2> transfer 7,1,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458543 <823, 1> transfer 7,8,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458545 <825, 0> transfer <5, 10, 10>
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458545 822
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458547 <826, 0> transfer 5,10,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458548 823
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458557 826
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458626 <831, 1> transfer 7,3,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458627 <830, 2> transfer 6,3,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458634 830
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458635 831
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458641 <836, 0> transfer <10, 8, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458642 <837, 0> transfer 10,8,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458645 837
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458715 <841, 1> transfer 1,10,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458717 <841, 2> transfer 5,2,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458723 841
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458725 <846, 0> transfer <10, 1, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458730 <847, 0> transfer 10,1,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458732 841
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458732 847
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458806 <851, 1> transfer 2,7,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458807 <851, 2> transfer 6,4,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458809 <850, 0> transfer <10, 3, 10>
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458810 851
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458817 <855, 0> transfer 10,3,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458823 855
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458824 851
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458890 <859, 1> transfer 1,9,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458892 859
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458901 <862, 0> transfer <1, 3, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458902 <863, 0> transfer 1,3,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458903 <863, 2> transfer 6,3,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458906 863
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458907 863
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458971 <869, 1> transfer 1,9,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458973 869
+Apr 07, 2015 1:34:18 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388458985 <872, 0> transfer <2, 1, 10>
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458987 <873, 0> transfer 2,1,10
+Apr 07, 2015 1:34:18 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388458987 <873, 2> transfer 9,3,10
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458989 873
+Apr 07, 2015 1:34:18 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:18 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388458990 873
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459058 <879, 1> transfer 5,8,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459065 879
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459070 <883, 2> transfer 10,5,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459071 883
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459073 <886, 0> transfer <4, 6, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459074 <887, 0> transfer 4,6,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459077 887
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459143 <891, 1> transfer 9,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459144 891
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459150 <895, 2> transfer 1,10,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459157 <898, 0> transfer <3, 9, 10>
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459157 895
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459158 <899, 0> transfer 3,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459160 899
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459222 <903, 1> transfer 4,8,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459224 903
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459230 <907, 2> transfer 3,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459231 907
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459237 <910, 0> transfer <7, 5, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459238 <911, 0> transfer 7,5,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459242 911
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459303 <915, 1> transfer 4,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459304 915
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459310 <919, 2> transfer 1,1,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459311 919
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459321 <922, 0> transfer <7, 9, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459321 <923, 0> transfer 7,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459325 923
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459382 <927, 1> transfer 8,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459384 927
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459390 <931, 2> transfer 8,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459391 931
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459405 <934, 0> transfer <6, 4, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459406 <935, 0> transfer 6,4,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459414 935
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459462 <939, 1> transfer 5,3,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459464 939
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459470 <943, 2> transfer 5,10,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459472 943
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459493 <946, 0> transfer <8, 10, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459493 <947, 0> transfer 8,10,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459495 947
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459546 <951, 1> transfer 7,4,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459548 951
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459554 <955, 2> transfer 1,3,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459555 955
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459573 <958, 0> transfer <2, 2, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459574 <959, 0> transfer 2,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459576 959
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459630 <963, 1> transfer 1,9,10
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459634 <966, 2> transfer 7,3,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459635 963
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459641 966
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459653 <969, 0> transfer <3, 2, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459653 <970, 0> transfer 3,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459656 970
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459714 <974, 1> transfer 1,9,10
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459719 <974, 2> transfer 4,10,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459721 974
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459721 974
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459733 <979, 0> transfer <10, 8, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459734 <980, 0> transfer 10,8,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459737 980
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459798 <984, 1> transfer 3,1,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459801 984
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459802 <988, 2> transfer 6,1,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459806 988
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459821 <991, 0> transfer <4, 1, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459822 <992, 0> transfer 4,1,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459826 992
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459891 <996, 1> transfer 1,5,10
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459893 <996, 2> transfer 6,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459902 996
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459903 996
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459905 <1001, 0> transfer <1, 9, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459906 <1002, 0> transfer 1,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459913 1002
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459983 <1006, 1> transfer 9,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459984 1006
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459986 <1010, 2> transfer 6,2,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459989 1010
+Apr 07, 2015 1:34:19 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388459993 <1013, 0> transfer <9, 9, 10>
+Apr 07, 2015 1:34:19 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388459994 <1014, 0> transfer 9,9,10
+Apr 07, 2015 1:34:19 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:19 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388459996 1014
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460066 <1018, 1> transfer 7,6,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460067 <1018, 2> transfer 10,3,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460070 1018
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460071 1018
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460073 <1023, 0> transfer <6, 5, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460073 <1024, 0> transfer 6,5,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460075 1024
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460153 <1027, 0> transfer <9, 10, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460156 <1028, 0> transfer 9,10,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460156 <1028, 1> transfer 3,3,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460156 <1028, 2> transfer 7,7,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460174 1028
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460175 1028
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460176 1028
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460253 <1035, 0> transfer <8, 7, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460254 <1036, 0> transfer 8,7,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460254 <1036, 1> transfer 2,9,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460262 <1040, 2> transfer 3,10,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460263 1036
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460265 1036
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460265 1040
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460341 <1044, 0> transfer <5, 3, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460342 <1045, 0> transfer 5,3,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460343 <1044, 1> transfer 4,10,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460347 <1050, 2> transfer 8,2,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460353 1044
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460362 1045
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460363 1050
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460441 <1053, 0> transfer <9, 3, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460443 <1054, 2> transfer 3,8,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460445 <1054, 0> transfer 9,3,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460453 <1055, 1> transfer 10,3,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460464 1054
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460466 1054
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460468 1055
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460541 <1061, 0> transfer <9, 5, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460542 <1062, 0> transfer 9,5,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460543 1062
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460546 <1066, 1> transfer 10,7,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460548 <1066, 2> transfer 8,7,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460553 1066
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460558 1066
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addTransferRequest
+INFO: 0 CLNT-REQ 1428388460625 <1071, 0> transfer <7, 3, 10>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460625 <1072, 0> transfer 7,3,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460628 1072
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460642 <1076, 1> transfer 10,5,10
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460642 <1076, 2> transfer 3,1,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460650 1076
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460650 1076
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460734 <1082, 2> transfer 1,10,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460735 1082
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460814 <1086, 2> transfer 9,8,10
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveTransferRequest
+INFO: transfer -> OK
+Apr 07, 2015 1:34:20 AM assignment5.BankServer execute
+INFO: 0 PROCESS 1428388460819 1086
+Apr 07, 2015 1:34:20 AM assignment5.BankServer addHaltRequest
+INFO: 0 CLNT-REQ 1428388460864 <1088, 0> halt <NONE>
+Apr 07, 2015 1:34:20 AM assignment5.ServerRequestHandlingThread$MyHelperThread run
+INFO: SRV-REQ 1428388460868 <1089, 0> halt 
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: halt -> SUCCESS
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account Balances ... 
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 10 } has balance = { 1030 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 9 } has balance = { 1030 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 8 } has balance = { 1100 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 7 } has balance = { 890 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 6 } has balance = { 1090 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 5 } has balance = { 960 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 4 } has balance = { 920 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 3 } has balance = { 900 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 2 } has balance = { 1110 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Account { 1 } has balance = { 970 }
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+Cumulative Balance = 10000
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Pending Requests ... 
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Performance Measurement Data ... 
+Apr 07, 2015 1:34:20 AM assignment5.BankServer serveHaltRequest
+INFO: Time taken to process the request when number of servers = { 3 } is 8 milliseconds
