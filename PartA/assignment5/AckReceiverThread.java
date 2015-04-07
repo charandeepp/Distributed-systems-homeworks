@@ -17,7 +17,6 @@ public class AckReceiverThread extends Thread {
 
     @Override
     public void run() {
-    	System.out.println(ack_.getOriginTimeStamp().getClock()+"_"+ack_.getOriginTimeStamp().getProcessId());
         TimeStamp originTimeStamp = ack_.getOriginTimeStamp();
         HashSet<Integer> pIds;
         synchronized (bankServer_.ackLock) {

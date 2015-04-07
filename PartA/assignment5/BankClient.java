@@ -42,14 +42,11 @@ public class BankClient {
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
-				System.out.println(line);
 				if (!line.startsWith("#")) {
 					String[] toks = line.split(" ");
 					if (toks.length != 3) {
-						System.out.println("Continue ***************");
 						continue;
 					}
-					System.out.println("Inerting ***************");
                     HashMap<String,Integer> hostPortMap = new HashMap<String, Integer>();
                     hostPortMap.put(toks[0].trim(), Integer.parseInt(toks[2].trim()));
 					serverIdVsHostPort_.put(Integer.parseInt(toks[1].trim()), hostPortMap);

@@ -22,8 +22,6 @@ public class ServerRequest extends PeerMsgType{
 
 	public ServerRequest(int procId, long clkVal, IRequest req) {
         super(1);
-        System.out.println(procId);
-        System.out.println(clkVal);
 		setTimeStamp(clkVal,procId);
 		setClockValue(clkVal);
 		setRequest(req);

@@ -46,7 +46,6 @@ public class BankClientThread extends Thread {
 			ins = null;
 		} catch (Exception e1) {
 			e1.printStackTrace();
-			System.out.println("Exception *******************");
 			return;
 		}
 
@@ -61,7 +60,6 @@ public class BankClientThread extends Thread {
 				
 				TransferRequestObject reqObject = new TransferRequestObject(reqArgs);
 				logger_.info(serverPId_ + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.transfer.name() + " " + reqArgs.toString());
-				System.out.println(serverPId_ + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.transfer.name() + " " + reqArgs.toString());
 				outs.writeObject(reqObject);
 				System.out.println("Write successfull " + i + "*****************");
 
