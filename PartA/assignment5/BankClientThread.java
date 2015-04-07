@@ -38,12 +38,8 @@ public class BankClientThread extends Thread {
 	public void run() {
 
 		Socket socket;
-		ObjectOutputStream outs;
-		ObjectInputStream ins;
 		try {
 			socket = new Socket(serverHost_, serverPort_);
-			outs = new ObjectOutputStream(socket.getOutputStream());
-			ins = null;
 		} catch (Exception e1) {
 			e1.printStackTrace();
 			return;
@@ -60,15 +56,16 @@ public class BankClientThread extends Thread {
 				
 				TransferRequestObject reqObject = new TransferRequestObject(reqArgs);
 				logger_.info(serverPId_ + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.transfer.name() + " " + reqArgs.toString());
+				ObjectOutputStream outs = new ObjectOutputStream(socket.getOutputStream());
 				outs.writeObject(reqObject);
-				System.out.println("Write successfull " + i + "*****************");
+				System.out.println("Write successfull " + i + " *****************");
 
-				if(ins == null) {
-					ins = new ObjectInputStream(socket.getInputStream());
-				}
+				ObjectInputStream ins = new ObjectInputStream(socket.getInputStream());
 				ResponseObject reqResponse = (ResponseObject) ins.readObject();
 				logger_.info(serverPId_ + " " + " RSP " + System.currentTimeMillis() + " " + reqResponse.getResponse());
 				
+				outs.close();
+				ins.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			} catch (ClassNotFoundException e) {
