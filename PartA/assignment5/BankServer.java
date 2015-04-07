@@ -242,7 +242,6 @@ public class BankServer {
 		logger_.info("Pending Requests ... ");
 		while(!requests_.isEmpty()) {
 			ServerRequest r = requests_.poll();
-			System.out.println(r.getSourceProcessId()+"_"+r.getClockValue());
 		}
 		
 		// print performance data
@@ -313,7 +312,6 @@ public class BankServer {
 	public void addNewRequest(IRequestObject reqObject, Socket clientSocket, BankServer bankServer) {
 		RequestType type = (RequestType)reqObject.reqType();
 		ServerRequest sreq = null;
-		System.out.println("IN addNewRequest ************************");
 		switch(type) {
 			case newaccount: {
 				sreq = addNewAccountRequest(reqObject, clientSocket);
@@ -462,7 +460,6 @@ public class BankServer {
 
 	public void addServerRequest(ServerRequest req) {
 		synchronized(reqLock_) {
-			System.out.println("In addServerRequest ************************");
 			clock_.updateAndGetClockValue(req.getClockValue());
 			requests_.add(req);
 		}
