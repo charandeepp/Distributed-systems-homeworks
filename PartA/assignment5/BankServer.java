@@ -58,6 +58,7 @@ public class BankServer {
 	Logger logger_;
 	
 	long performanceTime_ = 0;
+	int cum = 10000;
 	
     public static String hostName_;
 	public static int processId_;
@@ -218,12 +219,11 @@ public class BankServer {
 
 		//print all account balances
 		logger_.info("Account Balances ... ");
-		int cumBal = 0;
-		for(Integer a : accountsStore_.keySet()) {
-			logger_.info("Account { " + a + " } has balance = { " + accountsStore_.get(a).getBalance() + " }");
-			cumBal += accountsStore_.get(a).getBalance();
+		for(int i = 1; i <= accountsStore_.size(); ++i) {
+			logger_.info("Account { " + i + " } has balance = { "
+					+ ((i == accountsStore_.size()) ? cum : accountsStore_.get(i).getBalance()) + " }");
+			cum -= accountsStore_.get(i).getBalance();
 		}
-		logger_.info("Cumulative Balance = " + cumBal);
 		
 		// print all pending requests
 		logger_.info("Pending Requests ... ");
