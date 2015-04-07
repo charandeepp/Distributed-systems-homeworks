@@ -227,8 +227,12 @@ public class BankServer {
 		
 		// print all pending requests
 		logger_.info("Pending Requests ... ");
-		while(!requests_.isEmpty()) {
-			ServerRequest r = requests_.poll();
+		if(requests_.isEmpty()) {
+			logger_.info("No pending requests in the Queue !!!");
+		} else {
+			while(!requests_.isEmpty()) {
+				ServerRequest r = requests_.poll();
+			}
 		}
 		
 		// print performance data
