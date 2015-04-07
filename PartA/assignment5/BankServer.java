@@ -70,9 +70,14 @@ public class BankServer {
 
     public Integer ackLock = 3;
     
+    public int numberOfServers_ = 0;
+    
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_ = ServerLogger.logger();
-
+	
+	long cumStartTime_ = 0;
+	long cumEndTime_ = 0;
+	
     public static String hostName_;
 	public static int processId_;
 	public static int serverReqPort_;
@@ -110,6 +115,12 @@ public class BankServer {
 			updateStore(a);
 		}
 		
+		int cum = 0;
+		for(Integer a : accountsStore_.keySet()) {
+			cum+=accountsStore_.get(a).getBalance();
+		}
+		System.out.println("Cumulative = " + cum);
+		logger_.info("Initialized all accounts, Ready to receive client requests ...");
 	}
 
 	// TODO: should call this when we know that there are no other messages from
@@ -135,6 +146,7 @@ public class BankServer {
 							clientouts = new ObjectOutputStream(cs.getOutputStream());
 						}
 						clientouts.writeObject(resp);
+						cumEndTime_ += System.currentTimeMillis();
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -187,6 +199,7 @@ public class BankServer {
                         hostName_ = toks[0].trim();
 					} else {
 						peerServers_.put(toks[0].trim(), Integer.parseInt(toks[3].trim()));
+						numberOfServers_++;
 					}
 				}
 			}
@@ -232,16 +245,18 @@ public class BankServer {
 	}
 	
 	private ResponseObject serveHaltRequest(IRequest req) {
-		
 		RequestResponse response = (RequestResponse) req.execute();
 		// TODO Auto-generated method stub
 		logger_.info(RequestType.halt.name() + " -> " + response.getResponse());
 
 		//print all account balances
 		logger_.info("Account Balances ... ");
+		int cumBal = 0;
 		for(Integer a : accountsStore_.keySet()) {
 			logger_.info("Account { " + a + " } has balance = { " + accountsStore_.get(a).getBalance() + " }");
+			cumBal += accountsStore_.get(a).getBalance();
 		}
+		System.out.println("Cumulative Balance = " + cumBal);
 		
 		// print all pending requests
 		logger_.info("Pending Requests ... ");
@@ -250,8 +265,9 @@ public class BankServer {
 		}
 		
 		// print performance data
+		cumEndTime_ += System.currentTimeMillis();
 		logger_.info("Performance Measurement Data ... ");
-		Long timeTaken = System.currentTimeMillis() - ((HaltRequestB)req).getStartTime();
+		Long timeTaken = (cumEndTime_ - cumStartTime_)/(numberOfServers_*100+1);
 		logger_.info("Time taken to process the request when number of servers = { "
 				+ peerServers_.size() + " } is " + timeTaken.toString());
 		
@@ -331,7 +347,9 @@ public class BankServer {
 				break;
 			}
 			case transfer: {
-				sreq = addTransferRequest(reqObject, clientSocket);
+				synchronized(this){
+					sreq = addTransferRequest(reqObject, clientSocket);
+				}
 				break;
 			}
 			case balance: {
@@ -365,7 +383,7 @@ public class BankServer {
 				+ ", " + sreq.getSourceProcessId() + "> " + RequestType.halt.name()
 				+ " <" + "NONE" + ">");
 		addClientRequest(sreq, clientSocket);
-		return null;
+		return sreq;
 	}
 
 	// Adds new Balance Inquiry Request to Queue

@@ -36,5 +36,11 @@ public class DepositRequestB extends AbstractRequest {
 		account_.setBalance(account_.getBalance()+depositAmount_);
 		return new RequestResponse(Boolean.TRUE, "OK", account_);
 	}
+	
+	@Override
+	public String arguments() {
+		return new StringBuilder().append(account_.getAccountID()).append(",")
+				.append(depositAmount_).toString();
+	}
 
 }

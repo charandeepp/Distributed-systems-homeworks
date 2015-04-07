@@ -51,7 +51,6 @@ public class BankClientThread extends Thread {
 		// do NUMBER_OF_ITERATIONS number of transfers from randomly chosen account numbers
 		for(int i = 0; i < NUMBER_OF_ITERATIONS; ++i) {
 			try {
-				System.out.println("In  iteration " + i + "******************");
 				Arguments reqArgs = new Arguments();
 				reqArgs.addArgument(TransferRequestObject.Keys.sourceID.name(), getRandomAccount().toString());
 				reqArgs.addArgument(TransferRequestObject.Keys.destinationID.name(), getRandomAccount().toString());
@@ -60,7 +59,6 @@ public class BankClientThread extends Thread {
 				TransferRequestObject reqObject = new TransferRequestObject(reqArgs);
 				logger_.info(serverPId_ + " " + " REQ " + System.currentTimeMillis() + " " + RequestType.transfer.name() + " " + reqArgs.toString());
 				outs.writeObject(reqObject);
-				System.out.println("Write successfull " + i + " *****************");
 
 				if(ins == null) {
 					ins = new ObjectInputStream(socket.getInputStream());

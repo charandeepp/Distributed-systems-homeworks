@@ -46,4 +46,9 @@ public class WithdrawRequestB extends AbstractRequest {
 		return new RequestResponse(Boolean.TRUE, "OK", account_);
 	}
 
+	@Override
+	public String arguments() {
+		return new StringBuilder().append(account_.getAccountID()).append(",")
+				.append(withdrawAmount_).toString();
+	}
 }

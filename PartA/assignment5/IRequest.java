@@ -12,4 +12,6 @@ public interface IRequest extends Serializable {
 	
 	public Object execute();
 	
+	public String arguments();
+	
 }

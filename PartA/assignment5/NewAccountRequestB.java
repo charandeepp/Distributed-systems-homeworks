@@ -72,5 +72,11 @@ public class NewAccountRequestB extends AbstractRequest {
 	public void setAddress(String address_) throws IllegalArgumentException {
 		this.address_ = address_;
 	}
+
+	@Override
+	public String arguments() {
+		return new StringBuilder().append(firstName_).append(lastName_)
+				.append(address_).toString();
+	}
 	
 }

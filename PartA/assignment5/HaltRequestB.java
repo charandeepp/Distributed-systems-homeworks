@@ -26,5 +26,10 @@ public class HaltRequestB extends AbstractRequest {
 	public long getStartTime() {
 		return startTime_;
 	}
+	
+	@Override
+	public String arguments() {
+		return new String();
+	}
 
 }

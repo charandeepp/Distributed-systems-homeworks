@@ -49,4 +49,11 @@ public class TransferRequestB extends AbstractRequest {
 		return new RequestResponse(Boolean.TRUE, "OK", new AccountPair(source_, destination_));
 	}
 
+	@Override
+	public String arguments() {
+		return new StringBuilder().append(source_.getAccountID()).append(",")
+				.append(destination_.getAccountID()).append(",")
+				.append(amount_).toString();
+	}
+	
 }

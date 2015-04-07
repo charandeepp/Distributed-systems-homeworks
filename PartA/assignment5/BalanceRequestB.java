@@ -24,5 +24,10 @@ public class BalanceRequestB extends AbstractRequest {
 	public RequestResponse execute() {
 		return new RequestResponse(Boolean.TRUE, account_.getBalance().toString(), account_.getBalance());
 	}
+	
+	@Override
+	public String arguments() {
+		return new StringBuilder().append(account_.getAccountID()).toString();
+	}
 
 }

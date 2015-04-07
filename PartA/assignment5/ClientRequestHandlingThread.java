@@ -58,7 +58,6 @@ public class ClientRequestHandlingThread extends Thread {
 				for(int i = 0; i < 100; ++i) {
 					try {
 				        IRequestObject reqObj = (IRequestObject) ins.readObject();
-				        System.out.println("Read object " + reqObj.reqType());
 				        //add this request to the local queue to execute them as per StateMachineModel rules.
 				        this.mBankServer.addNewRequest(reqObj, this.mSocket, this.mBankServer);
 				        if(reqObj instanceof HaltRequestObject) {
