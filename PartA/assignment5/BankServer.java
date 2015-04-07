@@ -75,8 +75,7 @@ public class BankServer {
 	//TODO: need to refactor logging as per the HW requirements
 	Logger logger_;
 	
-	long cumStartTime_ = 0;
-	long cumEndTime_ = 0;
+	long performanceTime_ = 0;
 	
     public static String hostName_;
 	public static int processId_;
@@ -115,12 +114,6 @@ public class BankServer {
 			Account a = new Account(account, 1000, account.toString()+"F", account.toString()+"L", account.toString()+"A");
 			updateStore(a);
 		}
-		
-		int cum = 0;
-		for(Integer a : accountsStore_.keySet()) {
-			cum+=accountsStore_.get(a).getBalance();
-		}
-		System.out.println("Cumulative = " + cum);
 		logger_.info("Initialized all accounts, Ready to receive client requests ...");
 	}
 
@@ -137,6 +130,7 @@ public class BankServer {
 			}
 			ServerRequest r = requests_.poll();
 			ResponseObject resp = serveRequest(r.getRequest());
+			performanceTime_ += System.currentTimeMillis()/1000;
 			logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
 			// if it is a direct request, we also need to send a response back to the client
 			synchronized (clientDSLock_) {
@@ -147,7 +141,6 @@ public class BankServer {
 							clientouts = new ObjectOutputStream(cs.getOutputStream());
 						}
 						clientouts.writeObject(resp);
-						cumEndTime_ += System.currentTimeMillis();
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -266,11 +259,11 @@ public class BankServer {
 		}
 		
 		// print performance data
-		cumEndTime_ += System.currentTimeMillis();
+		performanceTime_ += System.currentTimeMillis()/1000;
 		logger_.info("Performance Measurement Data ... ");
-		Long timeTaken = (cumEndTime_ - cumStartTime_)/(numberOfServers_*100+1);
+		Long timeTaken = performanceTime_/(numberOfServers_*100+1);
 		logger_.info("Time taken to process the request when number of servers = { "
-				+ peerServers_.size() + " } is " + timeTaken.toString());
+				+ peerServers_.size()+1 + " } is " + timeTaken.toString());
 		
 		// closing log files
 		ServerLogger.closeLogFile();
@@ -348,9 +341,7 @@ public class BankServer {
 				break;
 			}
 			case transfer: {
-				synchronized(this){
-					sreq = addTransferRequest(reqObject, clientSocket);
-				}
+				sreq = addTransferRequest(reqObject, clientSocket);
 				break;
 			}
 			case balance: {

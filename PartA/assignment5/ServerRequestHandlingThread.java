@@ -63,7 +63,7 @@ public class ServerRequestHandlingThread extends Thread {
             try {
             
                 PeerMsgType req = (PeerMsgType) new ObjectInputStream(this.socket_.getInputStream()).readObject();
-                bankServer_.cumStartTime_ += System.currentTimeMillis();
+                bankServer_.performanceTime_ -= System.currentTimeMillis()/1000;
                 switch(req.peer_msg_type){
                     case 1:
                         ServerRequest servRequest = (ServerRequest)req;
