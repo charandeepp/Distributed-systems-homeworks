@@ -3,7 +3,7 @@ package assignment5;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * Thread which broadcasts to all other servers whenever a client makes a new
@@ -15,10 +15,10 @@ import java.util.HashMap;
 public class ServerBroadcasterThread extends Thread {
 
     private ServerRequest request_;
-    private HashMap<String, Integer> servers_;
+    private HashSet<PeerServer> servers_;
     private BankServer bankServer_;
 
-    public ServerBroadcasterThread(HashMap<String, Integer> peerServers, ServerRequest req, BankServer bankServer) {
+    public ServerBroadcasterThread(HashSet<PeerServer> peerServers, ServerRequest req, BankServer bankServer) {
         servers_ = peerServers;
         request_ = req;
         bankServer_ = bankServer;
@@ -50,12 +50,11 @@ public class ServerBroadcasterThread extends Thread {
             e.printStackTrace();
         }
 
-        for (String host : servers_.keySet()) {
+        for (PeerServer ps : servers_) {
             try {
 
                 //broadcast this request to all other servers
-                Socket peerSocket = new Socket(host, servers_.get(host));
-
+                Socket peerSocket = new Socket(ps.getHost(), ps.getPort());
                 new ObjectOutputStream(peerSocket.getOutputStream()).writeObject(sendingReq);
                 peerSocket.close();
             } catch (IOException e) {

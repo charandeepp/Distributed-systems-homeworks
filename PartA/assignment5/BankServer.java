@@ -40,7 +40,7 @@ public class BankServer {
 	public LamportClock clock_ = new LamportClock();
 	
 	// map of peer server host and port on which this server can communicate
-	public HashMap<String, Integer> peerServers_ = new HashMap<String, Integer>();
+	public HashSet<PeerServer> peerServers_ = new HashSet<PeerServer>();
 	
 	// map to hold the requests which are made by client directly to this server
 	// and hold a socket object on which response needs to be sent back
@@ -166,7 +166,7 @@ public class BankServer {
 						serverReqPort_ = Integer.parseInt(toks[3]);
                         hostName_ = toks[0].trim();
 					} else {
-						peerServers_.put(toks[0].trim(), Integer.parseInt(toks[3].trim()));
+						peerServers_.add(new PeerServer(toks[0].trim(), Integer.parseInt(toks[3].trim())));
 					}
 					numberOfServers_++;
 				}

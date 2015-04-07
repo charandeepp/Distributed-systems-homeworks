@@ -53,10 +53,9 @@ public class ServerRequestReceiverThread extends Thread {
                 new ObjectOutputStream(selfSocket.getOutputStream()).writeObject(ack_);
                 selfSocket.close();
 
-                for (String host : bankServer_.peerServers_.keySet()) {
-                		System.out.println("Sending ack to " + host + ack_.getAckClk()+"_"+ack_.getAckProcessId());
+                for (PeerServer ps : bankServer_.peerServers_) {
                         //broadcast this ack to all other servers
-                        Socket peerSocket = new Socket(host, bankServer_.peerServers_.get(host));
+                        Socket peerSocket = new Socket(ps.getHost(), ps.getPort());
                         new ObjectOutputStream(peerSocket.getOutputStream()).writeObject(ack_);
                         peerSocket.close();
 
