@@ -52,6 +52,8 @@ public class BankServer {
     public HashMap<TimeStamp,HashSet<Integer>> ackSet = new HashMap<TimeStamp,HashSet<Integer>>();
 
     public Integer ackLock = 3;
+
+    public Integer timeLock = 4;
     
     public int numberOfServers_ = 0;
     
@@ -111,7 +113,9 @@ public class BankServer {
 			}
 			ServerRequest r = requests_.poll();
 			ResponseObject resp = serveRequest(r.getRequest());
-			performanceTime_ += System.currentTimeMillis();
+            synchronized (timeLock) {
+                performanceTime_ += System.currentTimeMillis();
+            }
 			logger_.info(processId_ + " " + "PROCESS" + " " + System.currentTimeMillis() + " " + r.getClockValue());
 			// if it is a direct request, we also need to send a response back to the client
 			synchronized (clientDSLock_) {
@@ -212,8 +216,12 @@ public class BankServer {
 		}
 		return response;
 	}
-	
-	private ResponseObject serveHaltRequest(IRequest req) {
+
+    public BankServer() {
+        super();
+    }
+
+    private ResponseObject serveHaltRequest(IRequest req) {
 		RequestResponse response = (RequestResponse) req.execute();
 		logger_.info(RequestType.halt.name() + " -> " + response.getResponse());
 
@@ -236,7 +244,9 @@ public class BankServer {
 		}
 		
 		// print performance data
-		performanceTime_ += System.currentTimeMillis();
+        synchronized (timeLock) {
+            performanceTime_ += System.currentTimeMillis();
+        }
 		logger_.info("Performance Measurement Data ... ");
 		Long timeTaken = performanceTime_/(numberOfServers_*100+1);
 		logger_.info("Time taken to process the request when number of servers = { "

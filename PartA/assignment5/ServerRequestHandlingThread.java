@@ -60,7 +60,9 @@ public class ServerRequestHandlingThread extends Thread {
                 PeerMsgType req = (PeerMsgType) new ObjectInputStream(this.socket_.getInputStream()).readObject();
                 switch(req.peer_msg_type){
                     case 1:
-                    	bankServer_.performanceTime_ -= System.currentTimeMillis();
+                        synchronized (bankServer_.timeLock) {
+                            bankServer_.performanceTime_ -= System.currentTimeMillis();
+                        }
                     	ServerRequest servRequest = (ServerRequest)req;
                         String type = new String();
                         if(servRequest.getRequest() instanceof NewAccountRequestB) {
