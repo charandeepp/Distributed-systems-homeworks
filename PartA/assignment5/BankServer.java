@@ -217,10 +217,6 @@ public class BankServer {
 		return response;
 	}
 
-    public BankServer() {
-        super();
-    }
-
     private ResponseObject serveHaltRequest(IRequest req) {
 		RequestResponse response = (RequestResponse) req.execute();
 		logger_.info(RequestType.halt.name() + " -> " + response.getResponse());
